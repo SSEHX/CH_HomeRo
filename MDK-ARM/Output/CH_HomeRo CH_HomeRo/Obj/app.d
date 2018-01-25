@@ -1,6 +1,6 @@
 Output/CH_HomeRo\ CH_HomeRo/Obj/app.o: \
- /Users/xuqi/temp/CH_HomeRo/MDK-ARM/app.c \
- /Users/xuqi/temp/CH_HomeRo/MDK-ARM/app.h ../MDK-ARM/bc95/bc95.h \
+ /Users/xuqi/temp/github/CH_HomeRo/MDK-ARM/app.c \
+ /Users/xuqi/temp/github/CH_HomeRo/MDK-ARM/app.h ../MDK-ARM/bc95/bc95.h \
  ../Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Inc/stm32f1xx_hal_conf.h ../Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \

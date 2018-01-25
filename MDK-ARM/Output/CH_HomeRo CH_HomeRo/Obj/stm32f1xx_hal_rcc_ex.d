@@ -1,5 +1,5 @@
 Output/CH_HomeRo\ CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o: \
- /Users/xuqi/temp/CH_HomeRo/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c \
+ /Users/xuqi/temp/github/CH_HomeRo/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Inc/stm32f1xx_hal_conf.h ../Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \

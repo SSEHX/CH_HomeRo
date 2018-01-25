@@ -111,24 +111,32 @@ void bc95_init(){
  | Return      :        uint8_t     OK --> 1      ERROR --> 0
 ----------------------------------------------------------------*/
 uint8_t bc95_send_command(uint8_t *cmd, uint8_t *ack, uint8_t timeout, uint8_t loop){
+    _system_led;
     do{
         bc95_open_recv();
         //use usart2 send command
         HAL_UART_Transmit_DMA(&huart1, cmd, (uint16_t)strlen(cmd));
+        #ifdef DEBUG
         printf("usart2 send command: %s", cmd);
+        #endif
         uint32_t time_count = (timeout*1000)/BC95_CMD_DELAY;    // Calculation loop number
         while(time_count--){      
             HAL_Delay(BC95_CMD_DELAY);
             if(bc95_recv.rx_flag){                              // check recv flag
                 if(bc95_check_ack(ack)){                        // check recv data
+                    #ifdef DEBUG
                     printf("SUCCESS: check ack ok \r\n\r\n");
+                    #endif
+                    _system_led;
                     return OK;
                 }else{
+                    #ifdef DEBUG
                     printf("ERROR");
                     printf("\r\n----- recv data ---------------\r\n");
                     printf("%s", bc95_recv.rx_buf);
                     printf("\r\n----- end ---------------------\r\n");
                     printf("check ack error ...\r\n\r\n");
+                    #endif
                 }
             }
         }
@@ -160,6 +168,7 @@ void bc95_open_recv(){
  | Return      :        ok --> 1    error --> 0
 ----------------------------------------------------------------*/
 uint8_t bc95_check_ack(uint8_t *ack){
+    _system_led;
     if(strstr((const char*)bc95_recv.rx_buf, (const char*)ack) != NULL){
         return  1;
     }else{
@@ -179,20 +188,28 @@ uint8_t bc95_get_imsi(){
     do{
         if(bc95_send_command(cmd_get_imsi, cmd_ok, BC95_TIMEOUT, BC95_LOOP_NUMBER)){
             if(strlen(bc95_recv.rx_buf) != 25){
+                #ifdef DEBUG
                 printf("ERROR:rx buffer length error\r\n");
+                #endif
                 continue;
             }
             memmove(bc95_status.imsi, &bc95_recv.rx_buf[2], 15);    // copy imsi to bc95_status.imsi
             if(strlen(bc95_status.imsi) == 15){                     // judge imsi length
+                #ifdef DEBUG
                 printf("SUCCESS\r\n");
                 printf("imsi:%s\r\n\r\n", bc95_status.imsi);
+                #endif
                 return OK;
             }else{
+                #ifdef DEBUG    
                 printf("ERROR:imsi number error\r\n");
+                #endif
                 continue;
             }
         }else{
+            #ifdef DEBUG
             printf("ERROR:command exec error\r\n");
+            #endif
             continue;
         }
     }while(count--);
@@ -204,20 +221,28 @@ uint8_t bc95_get_imei(){
     do{     
         if(bc95_send_command(cmd_get_imei, cmd_ok, BC95_TIMEOUT, BC95_LOOP_NUMBER)){
             if(strlen(bc95_recv.rx_buf) != 31){
+                #ifdef DEBUG
                 printf("ERROR:rx buffer length error\r\n");
+                #endif
                 continue;
             }
             memmove(bc95_status.imei, &bc95_recv.rx_buf[8], 15);    // copy imsi to bc95_status.imsi
             if(strlen(bc95_status.imei) == 15){                     // judge imsi length
+                #ifdef DEBUG
                 printf("SUCCESS\r\n");
                 printf("imei:%s\r\n\r\n", bc95_status.imei);
+                #endif
                 return OK;
             }else{
+                #ifdef DEBUG
                 printf("ERROR:imei number error\r\n");
+                #endif
                 continue;
             }
         }else{
+            #ifdef DEBUG
             printf("ERROR:command exec error\r\n");
+            #endif
             continue;
         }
     }while(count--);
@@ -235,20 +260,28 @@ uint8_t bc95_get_iccid(){
     do{
         if(bc95_send_command(cmd_get_iccid, cmd_ok, BC95_TIMEOUT, BC95_LOOP_NUMBER)){
             if(strlen(bc95_recv.rx_buf) != 37){
+                #ifdef DEBUG
                 printf("ERROR:rx buffer length error\r\n");
+                #endif
                 continue;
             }
             memmove(bc95_status.iccid, &bc95_recv.rx_buf[9], 19);    // copy imsi to bc95_status.imsi
             if(strlen(bc95_status.iccid) == 19){                     // judge imsi length
+                #ifdef DEBUG    
                 printf("SUCCESS\r\n");
                 printf("iccid:%s\r\n\r\n", bc95_status.iccid);
+                #endif
                 return OK;
             }else{
+                #ifdef DEBUG
                 printf("ERROR:iccid number error\r\n");
+                #endif
                 continue;
             }
         }else{
+            #ifdef DEBUG
             printf("ERROR:command exec error\r\n");
+            #endif
             continue;
         }
     }while(count--);
@@ -265,14 +298,20 @@ uint8_t bc95_get_profile_status(){
     do{
         if(bc95_send_command(cmd_get_profile_status, "+CGATT:1", BC95_TIMEOUT, BC95_LOOP_NUMBER)){
             bc95_status.profile_status = 1;
+            #ifdef DEBUG
             printf("SUCCESS\r\n");
             printf("profile status: %d\r\n\r\n", bc95_status.profile_status);
+            #endif
             return OK; 
         }   
+        #ifdef DEBUG
         printf("ERROR:UE no network\r\n");
+        #endif
         bc95_status.profile_status = 0;
     }while(count--);
+    #ifdef DEBUG
     printf("ERROR:get profile status time out\r\n");
+    #endif
     return ERROR;
 }
 
@@ -292,17 +331,23 @@ uint8_t bc95_get_csq(){
             char *end   = strchr(bc95_recv.rx_buf, ',');
             uint8_t  csq_len = end - begin;
             memmove(cache, begin, csq_len);
-            if((bc95_status.csq = myatoi(cache)) > 32){
+            if((bc95_status.csq = atoi(cache)) > 32){
+                #ifdef DEBUG
                 printf("ERROR:csq number error\r\n");
+                #endif
                 bc95_status.csq = 0;
                 continue;
             }
+            #ifdef DEBUG
             printf("SUCCESS\r\n");
             printf("csq: %d\r\n", bc95_status.csq);
+            #endif
             return OK;
         }
     }while(count--);
+    #ifdef DEBUG
     printf("ERROR:get csq time out\r\n");
+    #endif
     return ERROR;
 }
 
@@ -315,7 +360,9 @@ uint8_t bc95_get_csq(){
 ----------------------------------------------------------------*/
 uint8_t bc95_set_server_ip(){
     if(bc95_send_command(cmd_get_server_ip, server_ip, BC95_TIMEOUT, BC95_LOOP_NUMBER)){
+        #ifdef DEBUG
         printf("SUCCESS: server ip is setted\r\n");
+        #endif
         return OK; 
     }
     bc95_send_command(cmd_disconnect, cmd_ok, BC95_TIMEOUT, BC95_LOOP_NUMBER);
@@ -324,14 +371,20 @@ uint8_t bc95_set_server_ip(){
     strcat(cmd, "\r\n");
     if(bc95_send_command(cmd, cmd_ok, BC95_TIMEOUT, BC95_LOOP_NUMBER)){
         if(bc95_send_command(cmd_set_fully_funtion, cmd_ok, BC95_TIMEOUT * 3, BC95_LOOP_NUMBER)){
+            #ifdef DEBUG
             printf("SUCCESS: server ip (%s) be set \r\n", server_ip);
+            #endif
             bc95_reboot();
         }
     }else{
+        #ifdef DEBUG
         printf("ERROR: set server ip timeout\r\n");
+        #endif
         bc95_reboot();
     }
+    #ifdef DEBUG
     printf("ERROR: set server ip error\r\n");
+    #endif
     return ERROR;
 }
 
@@ -343,7 +396,9 @@ uint8_t bc95_set_server_ip(){
  | Return      :    null
 ----------------------------------------------------------------*/
 void bc95_reboot(){
+    #ifdef DEBUG
     printf("bc95 rebooting\r\n");
+    #endif
     bc95_send_command(cmd_reboot, "REBOOT", DISABLE, DISABLE);
     bc95_init();
 }
@@ -368,34 +423,44 @@ uint8_t bc95_send_coap(uint8_t *ack){
     strcat(cmd, "\r\n");
 
     if(bc95_send_command(cmd, ack, 20, BC95_LOOP_NUMBER)){
+        #ifdef DEBUG    
         printf("SUCCESS:send data to server success\r\n");
+        #endif
         return OK;
         
     }else{
+        #ifdef DEBUG
         printf("ERROR:send data to server error\r\n");
+        #endif
     }
 }
 
 void bc95_read_coap(uint8_t timeout){
+    #ifdef DEBUG
     printf("INFO: bc95 have a coap recv\r\n");
+    #endif
     bc95_open_recv();
     HAL_UART_Transmit_DMA(&huart1, cmd_coap_get_data, (uint16_t)strlen(cmd_coap_get_data));
     do{
         HAL_Delay(BC95_CMD_DELAY);
         if(bc95_recv.rx_flag == OK){                             // check recv flag
             if(bc95_check_ack(cmd_ok)){                          // check recv data
+                #ifdef DEBUG    
                 printf("SUCCESS: check ack ok \r\n\r\n");
+                #endif
                 char *begin = strchr(bc95_recv.rx_buf, ',') + 1;
                 /*!<  copy server command to bc95_recv.server_cmd than */
                 memmove(bc95_recv.server_cmd, begin, (SERVER_CMD_LEN * 2));
-                
+                processing_server_command();
                 return;
             }else{
+                #ifdef DEBUG
                 printf("ERROR");
                 printf("\r\n----- recv data ---------------\r\n");
                 printf("%s", bc95_recv.rx_buf);
                 printf("\r\n----- end ---------------------\r\n");
                 printf("check ack error ...\r\n\r\n");
+                #endif
             }
         }
     }while(timeout--);

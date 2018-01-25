@@ -3,99 +3,6 @@
 
 uint32_t flash_pages_data[FLASH_DATA_LEN] = {0};
 
-uint8_t *_itoa(int value, uint8_t *string, int radix)
-{
-    int     i, d;
-    int     flag = 0;
-    char    *ptr = string;
-
-    /* This implementation only works for decimal numbers. */
-    if (radix != 10)
-    {
-        *ptr = 0;
-        return string;
-    }
-
-    if (!value)
-    {
-        *ptr++ = 0x30;
-        *ptr = 0;
-        return string;
-    }
-
-    /* if this is a negative value insert the minus sign. */
-    if (value < 0)
-    {
-        *ptr++ = '-';
-
-        /* Make the value positive. */
-        value *= -1;
-    }
-
-    for (i = 10000; i > 0; i /= 10)
-    {
-        d = value / i;
-
-        if (d || flag)
-        {
-            *ptr++ = (char)(d + 0x30);
-            value -= (d * i);
-            flag = 1;
-        }
-    }
-
-    /* Null terminate the string. */
-    *ptr = 0;
-
-    return string;
-
-} /* NCL_Itoa */
-
-int myatoi(const char *str)
-{
-	int s=0;
-	uint8_t falg=0;
-	
-	while(*str==' ')
-	{
-		str++;
-	}
-
-	if(*str=='-'||*str=='+')
-	{
-		if(*str=='-')
-		falg=1;
-		str++;
-	}
-
-	while(*str>='0'&&*str<='9')
-	{
-		s=s*10+*str-'0';
-		str++;
-		if(s<0)
-		{
-			s=2147483647;
-			break;
-		}
-	}
-	return s*(falg?-1:1);
-}
-
-void HexToStr(uint8_t *pbDest, uint8_t *pbSrc, uint32_t nLen)
-{
-	char ddl,ddh;
-	int i;
-	for (i=0; i<nLen; i++)
-	{
-		ddh = 48 + pbSrc[i] / 16;
-		ddl = 48 + pbSrc[i] % 16;
-		if (ddh > 57) ddh = ddh + 7;
-		if (ddl > 57) ddl = ddl + 7;
-		pbDest[i*2] = ddh;
-		pbDest[i*2+1] = ddl;
-	}
-	pbDest[nLen*2] = '\0';
-}
 
 uint8_t *ByteToHexStr(const uint8_t* source, uint32_t sourceLen)  
 {  
@@ -125,7 +32,13 @@ uint8_t *ByteToHexStr(const uint8_t* source, uint32_t sourceLen)
     return dest;  
 }
 
-
+/*----------------------------------------------------------------
+ | Function    :    flash_write
+ | Description :    write the *data to flash 
+ | Input       :    
+ | Output      :    
+ | Return      :    
+----------------------------------------------------------------*/
 void flash_write(uint32_t *data){
 
     HAL_FLASH_Unlock();
@@ -177,43 +90,82 @@ void processing_server_command(){
 //    01 01 00 00000000 00000000 00 64 64 64 64 64 64 64 64 64 64 01 43482D524F2D3030303031232323232323232323
     /*!< A 设备开机 */
     uint8_t boot[3] = {0};              
-    memmove(boot, &bc95_recv.server_cmd[0], (sizeof(device_status.boot) * 2));
+    memmove(boot, &bc95_recv.server_cmd[0], 2);
     device_status.boot = atoi(boot);
     
     /*!< B 停机开关机 */
     uint8_t arrears_boot[3] = {0};
-    memmove(arrears_boot, &bc95_recv.server_cmd[2], (sizeof(device_status.arrears_boot) * 2));
-    device_status.arrears_boot = atoi(arrears_boot);
+    memmove(arrears_boot, &bc95_recv.server_cmd[2], 2);
+    sscanf(arrears_boot, "%x", &device_status.arrears_boot);
 
     /*!< C 冲洗开关 */
     uint8_t rinse[3] = {0};
-    memmove(rinse, &bc95_recv.server_cmd[4], (sizeof(device_status.rinse) * 2));
-    device_status.rinse = atoi(rinse);
+    memmove(rinse, &bc95_recv.server_cmd[4], 2);
+    sscanf(rinse, "%x", &device_status.rinse);
     
     /*!< D 时间 */
     uint8_t time[9] = {0};
-    memmove(time, &bc95_recv.server_cmd[6], (sizeof(device_status.time) * 2));
-    device_status.time = atoi(time);
+    memmove(time, &bc95_recv.server_cmd[6], 8);
+    sscanf(time, "%x", &device_status.time);
     
     /*!< F 流量 */
     uint8_t flow[9] = {0};
-    memmove(flow, &bc95_recv.server_cmd[14], (sizeof(device_status.flow) * 2));
-    device_status.flow = atoi(flow);
+    memmove(flow, &bc95_recv.server_cmd[14], 8);
+    sscanf(flow, "%x", &device_status.flow);
     
+    /*!< F 设备类型  */
+    uint8_t device_mode[3] = {0};
+    memmove(device_mode, &bc95_recv.server_cmd[22], 2);
+    sscanf(device_mode, "%x", &device_status.device_mode);
+
     /*!< g1-g10 滤芯 */
-    for(uint8_t i = 0 ; i < 10 ; i++){
+    for(uint8_t i = 0 ; i < 9 ; i++){
         uint8_t filter[3] = {0};
-        memmove(filter, &bc95_recv.server_cmd[24 + (i * 2)], (sizeof(device_status.filter) * 2));
-        device_status.filter[i] = atoi(filter);
+        memmove(filter, &bc95_recv.server_cmd[24 + (i * 2)], 2);
+        sscanf(filter, "%02x", &device_status.filter[i]);
     }
     
     /*!< H 注册是否成功*/
     uint8_t device_registe[3] = {0};
-    memmove(device_registe, &bc95_recv.server_cmd[44], (sizeof(device_status.device_registe) * 2));
-    device_status.device_registe = atoi(device_registe);
+    memmove(device_registe, &bc95_recv.server_cmd[44], 2);
+    sscanf(device_registe, "%x", &device_status.device_registe);
 
     /*!< I 二维码 */
-    uint8_t qr_code[QR_CODE_LEN] = {0};
+    uint8_t qr_code[(QR_CODE_LEN*2)+1] = {0};
     memmove(qr_code, &bc95_recv.server_cmd[46], (sizeof(device_status.qr_code) * 2));
+    for(uint8_t i = 0 ; i < QR_CODE_LEN ;i ++){
+        uint8_t temp[3] = {0};
+        memmove(temp, &qr_code[ (i*2) ], 2);
+        sscanf(temp , "%x", &device_status.qr_code[i]);
+    }
 
+    /*!< I 冲洗时间 */
+    uint8_t rinse_time[3] = {0};
+    memmove(rinse_time, &bc95_recv.server_cmd[86], 2);
+    sscanf(rinse_time, "%x", &device_status.rinse_time);
+
+    flash_device_status();
+}
+
+void flash_device_status(){
+
+    flash_pages_data[TIME_ADDR]   =    device_status.time;
+    flash_pages_data[FLOW_ADDR]   =    device_status.flow;
+    flash_pages_data[BOOT_ADDR]   =    device_status.boot;
+    flash_pages_data[RINSE_TIME]  =    device_status.rinse_time;
+    flash_pages_data[REGISTE_ADDR]        =    device_status.device_registe;
+    flash_pages_data[DEVICE_MODE_ADDR]    =    device_status.device_mode;
+    flash_pages_data[ARREARS_BOOT_ADDR]   =    device_status.arrears_boot;
+    for(uint8_t i = 0 ; i < 10 ; i++){
+        flash_pages_data[FILTER_ADDR+i]   =    device_status.filter[i];
+    }
+    for(uint8_t i = 0 ; i < QR_CODE_LEN ; i++){
+        flash_pages_data[QR_CODE_ADDR+i]  =    device_status.qr_code[i];
+    }
+
+    flash_write(flash_pages_data);
+    
+    device_status.processing_status = 1;
+    bc95_send_coap("+NSMI:SENT");
+    device_status.processing_status = 0;
 }

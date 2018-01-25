@@ -115,14 +115,17 @@ int main(void)
     /* USER CODE BEGIN WHILE */
     init_device_from_flash();
     bc95_init();
+    bc95_open_recv();
+    HAL_TIM_Base_Start_IT(&htim1);
+    HAL_TIM_Base_Start_IT(&htim2);
+
+    device_status.rinse = 1;            // start rinse 
 
     while (1)
     {
         if(bc95_recv.server_cmd_flag == 1){
             bc95_read_coap(BC95_LOOP_NUMBER);
-            processing_server_command();
-            bc95_recv.server_cmd_flag = 0;                   // set the server command flag
-            
+            bc95_recv.server_cmd_flag = 0;                   // clear the server command flag
         }
     }
     /* USER CODE END 3 */

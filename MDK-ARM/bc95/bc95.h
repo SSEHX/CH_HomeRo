@@ -14,7 +14,7 @@
 #define ERROR               0
 
 #define RX_LEN              600
-#define SERVER_CMD_LEN      43              //need (length * 2)
+#define SERVER_CMD_LEN      44              //need (length * 2)
 
 #define _CLEAR_RX_TYPEDEF  memset(&bc95_recv, 0, sizeof(bc95_recvTypeDef));
 

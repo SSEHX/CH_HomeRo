@@ -28,9 +28,11 @@
       Name="CH_HomeRo"
       c_preprocessor_definitions="USE_HAL_DRIVER;STM32F103xB"
       c_user_include_directories="$(PackagesDir)/CMSIS_4/CMSIS/Include;../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../MDK-ARM/i2c;../MDK-ARM/oled;../MDK-ARM/bc95;../MDK-ARM/tools;../MDK-ARM/tds;../MDK-ARM/lcd;../MDK-ARM/eeprom;../MDK-ARM"
+      debug_leave_target_running="Yes"
       gcc_entry_point="Reset_Handler"
       linker_memory_map_file="$(PackagesDir)/STM32F1xx/XML/STM32F103R8_MemoryMap.xml"
       linker_printf_fp_enabled="Double"
+      linker_printf_wchar_enabled="Yes"
       linker_printf_width_precision_supported="Yes"
       linker_scanf_character_group_matching_enabled="Yes"
       linker_scanf_fp_enabled="Yes" />

@@ -1,5 +1,5 @@
 Output/CH_HomeRo\ CH_HomeRo/Obj/gpio.o: \
- /Users/xuqi/temp/CH_HomeRo/Src/gpio.c ../Inc/gpio.h \
+ /Users/xuqi/temp/github/CH_HomeRo/Src/gpio.c ../Inc/gpio.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Inc/stm32f1xx_hal_conf.h ../Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \

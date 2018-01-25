@@ -1,5 +1,5 @@
 Output/CH_HomeRo\ CH_HomeRo/Obj/system_stm32f1xx.o: \
- /Users/xuqi/temp/CH_HomeRo/Src/system_stm32f1xx.c \
+ /Users/xuqi/temp/github/CH_HomeRo/Src/system_stm32f1xx.c \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
  /Users/xuqi/Library/SEGGER/SEGGER\ Embedded\ Studio/v3/packages/CMSIS_4/CMSIS/Include/core_cm3.h \
