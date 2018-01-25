@@ -7,20 +7,20 @@
 #define FLASH_DATA_ADDR 0x0800F000
 #define FLASH_DATA_LEN  50
 
-#define FIRST_BOOT_ADDR   0
-#define REGISTE_ADDR      1                                         //
-#define PURE_TDS_ADDR     2
-#define RAW_TDS_ADDR      3
-#define TIME_ADDR         4                                         //
-#define FLOW_ADDR         5                                         //
-#define BOOT_ADDR         6                                         //
-#define DEVICE_MODE_ADDR  7         //1:租赁  2：零售                //  
+#define FIRST_BOOT_ADDR     0
+#define REGISTE_ADDR        1                                         //
+#define CREATE_WATER_TIME_M 2
+#define CREATE_WATER_FIRST  3
+#define TIME_ADDR           4                                         //
+#define FLOW_ADDR           5                                         //
+#define BOOT_ADDR           6                                         //
+#define DEVICE_MODE_ADDR    7         //1:租赁  2：零售                //  
 
-#define FILTER_ADDR       8         //10个滤芯，依次后排    到19      //
+#define FILTER_ADDR         8         //10个滤芯，依次后排    到19      //
 
-#define RINSE_TIME        19        //冲洗时间                      //
-#define ARREARS_BOOT_ADDR 20        //停机开关机                    //   
-#define QR_CODE_ADDR      21        //二维码                        //
+#define RINSE_TIME          19        //冲洗时间                      //
+#define ARREARS_BOOT_ADDR   20        //停机开关机                    //   
+#define QR_CODE_ADDR        21        //二维码                        //
 
 
 extern uint32_t flash_pages_data[FLASH_DATA_LEN];

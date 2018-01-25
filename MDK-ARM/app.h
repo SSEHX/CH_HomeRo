@@ -65,7 +65,8 @@ typedef struct{
     uint8_t      qr_code[QR_CODE_LEN+1];
     uint32_t     create_water_time_s;    //制水时间秒
     uint32_t     create_water_time_m;    //制水时间分钟
-
+    uint32_t     create_water_rinse;     //制水多长时间冲洗 分钟
+    uint32_t     create_water_rinse_count;
 }device_statusTypeDef;
 
 extern device_statusTypeDef device_status; 

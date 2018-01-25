@@ -2,11 +2,8 @@
 <session>
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
-  <BreakpointListItem trigger="" line="454" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="bc95/bc95.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="145" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="tools/tools.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="147" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="tools/tools.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="234" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="tools/tools.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="250" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="tools/tools.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="235" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="tools/tools.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="251" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="tools/tools.c" useHWbreakpoint="false"/>
   <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
@@ -14,7 +11,7 @@
   <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
  </FrameBufferWindow>
  <Memory1>
-  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="CH_HomeRo" radix="16" sizeText="" addressText="0x800F000"/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="CH_HomeRo" radix="16" sizeText="" addressText="0x800F048"/>
  </Memory1>
  <Memory2>
   <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="CH_HomeRo" radix="16" sizeText="" addressText=""/>
@@ -68,20 +65,20 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="131" useTextEdit="1" useBinaryEdit="0" left="0" path="../Src/main.c" debugPath="../Src/main.c" selected="1" top="119" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="74" useTextEdit="1" useBinaryEdit="0" left="0" path="../Src/main.c" debugPath="../Src/main.c" selected="0" top="56" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="/Applications/SEGGER Embedded Studio for ARM 3.34/source/thumb_crt0.s" debugPath="/Applications/SEGGER Embedded Studio for ARM 3.34/source/thumb_crt0.s" selected="0" top="369" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../Src/system_stm32f1xx.c" debugPath="../Src/system_stm32f1xx.c" selected="0" top="394" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="313" useTextEdit="1" useBinaryEdit="0" left="0" path="../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" debugPath="../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" selected="0" top="301" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="125" useTextEdit="1" useBinaryEdit="0" left="0" path="../Src/tim.c" debugPath="../Src/tim.c" selected="0" top="113" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="335" useTextEdit="1" useBinaryEdit="0" left="0" path="../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" debugPath="../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" selected="0" top="320" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="62" useTextEdit="1" useBinaryEdit="0" left="0" path="../Src/tim.c" debugPath="../Src/tim.c" selected="0" top="146" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="83" useTextEdit="1" useBinaryEdit="0" left="0" path="../Src/stm32f1xx_it.c" debugPath="../Src/stm32f1xx_it.c" selected="0" top="70" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="4286" useTextEdit="1" useBinaryEdit="0" left="0" path="../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" debugPath="../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" selected="0" top="4269" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="453" useTextEdit="1" useBinaryEdit="0" left="0" path="bc95/bc95.c" debugPath="bc95/bc95.c" selected="0" top="438" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../Src/usart.c" debugPath="../Src/usart.c" selected="0" top="206" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="347" useTextEdit="1" useBinaryEdit="0" left="0" path="../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" debugPath="../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" selected="0" top="329" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="422" useTextEdit="1" useBinaryEdit="0" left="0" path="bc95/bc95.c" debugPath="bc95/bc95.c" selected="0" top="427" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../Src/usart.c" debugPath="../Src/usart.c" selected="0" top="89" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="39" useTextEdit="1" useBinaryEdit="0" left="0" path="bc95/bc95.h" debugPath="bc95/bc95.h" selected="0" top="18" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="19" useTextEdit="1" useBinaryEdit="0" left="0" path="tools/tools.h" debugPath="tools/tools.h" selected="0" top="19" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="64" useTextEdit="1" useBinaryEdit="0" left="0" path="app.h" debugPath="app.h" selected="0" top="40" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="29" useTextEdit="1" useBinaryEdit="0" left="0" path="app.c" debugPath="app.c" selected="0" top="12" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="154" useTextEdit="1" useBinaryEdit="0" left="0" path="tools/tools.c" debugPath="tools/tools.c" selected="0" top="143" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="11" useTextEdit="1" useBinaryEdit="0" left="0" path="tools/tools.h" debugPath="tools/tools.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="68" useTextEdit="1" useBinaryEdit="0" left="0" path="app.h" debugPath="app.h" selected="0" top="49" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="60" y="33" useTextEdit="1" useBinaryEdit="0" left="0" path="app.c" debugPath="app.c" selected="1" top="32" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="153" useTextEdit="1" useBinaryEdit="0" left="0" path="tools/tools.c" debugPath="tools/tools.c" selected="0" top="137" codecName="Default"/>
  </Files>
  <ARMCrossStudioWindow activeProject="CH_HomeRo" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="CH_HomeRo" debugSearchFileMap="" fileDialogInitialDirectory="/Users/xuqi/temp/CH_HomeRo/MDK-ARM/tds" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

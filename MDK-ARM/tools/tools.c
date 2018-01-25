@@ -145,10 +145,19 @@ void processing_server_command(){
     sscanf(rinse_time, "%x", &device_status.rinse_time);
 
     flash_device_status();
+
+    device_status.processing_status = 1;
+    bc95_send_coap("+NSMI:SENT");
+    device_status.processing_status = 0;
 }
-
+/*----------------------------------------------------------------
+ | Function    :    flash_device_status
+ | Description :    save the device status to flash
+ | Input       :    null
+ | Output      :    null
+ | Return      :    null
+----------------------------------------------------------------*/
 void flash_device_status(){
-
     flash_pages_data[TIME_ADDR]   =    device_status.time;
     flash_pages_data[FLOW_ADDR]   =    device_status.flow;
     flash_pages_data[BOOT_ADDR]   =    device_status.boot;
@@ -156,6 +165,7 @@ void flash_device_status(){
     flash_pages_data[REGISTE_ADDR]        =    device_status.device_registe;
     flash_pages_data[DEVICE_MODE_ADDR]    =    device_status.device_mode;
     flash_pages_data[ARREARS_BOOT_ADDR]   =    device_status.arrears_boot;
+    flash_pages_data[CREATE_WATER_TIME_M] =    device_status.create_water_time_m;
     for(uint8_t i = 0 ; i < 10 ; i++){
         flash_pages_data[FILTER_ADDR+i]   =    device_status.filter[i];
     }
@@ -164,8 +174,5 @@ void flash_device_status(){
     }
 
     flash_write(flash_pages_data);
-    
-    device_status.processing_status = 1;
-    bc95_send_coap("+NSMI:SENT");
-    device_status.processing_status = 0;
+
 }

@@ -72,7 +72,7 @@ void SystemClock_Config(void);
 /* USER CODE END 0 */
 
 int main(void)
-{
+    {
 
     /* USER CODE BEGIN 1 */
 
@@ -117,15 +117,21 @@ int main(void)
     bc95_init();
     bc95_open_recv();
     HAL_TIM_Base_Start_IT(&htim1);
-    HAL_TIM_Base_Start_IT(&htim2);
+    
 
     device_status.rinse = 1;            // start rinse 
-
+    device_status.create_water_rinse = 1;
     while (1)
     {
         if(bc95_recv.server_cmd_flag == 1){
             bc95_read_coap(BC95_LOOP_NUMBER);
             bc95_recv.server_cmd_flag = 0;                   // clear the server command flag
+        }
+        if(device_status.boot == 1){
+            HAL_TIM_Base_Start_IT(&htim2);
+        }else{
+            HAL_TIM_Base_Stop_IT(&htim2);
+            stop_rinse;
         }
     }
     /* USER CODE END 3 */
