@@ -294,7 +294,7 @@ uint8_t bc95_get_iccid(){
  | Return      :        ok --> 1    error --> 0
 ----------------------------------------------------------------*/
 uint8_t bc95_get_profile_status(){
-    uint8_t count = BC95_LOOP_NUMBER * 3;
+    uint8_t count = BC95_LOOP_NUMBER * 2;
     do{
         if(bc95_send_command(cmd_get_profile_status, "+CGATT:1", BC95_TIMEOUT, BC95_LOOP_NUMBER)){
             bc95_status.profile_status = 1;
@@ -399,7 +399,10 @@ void bc95_reboot(){
     #ifdef DEBUG
     printf("bc95 rebooting\r\n");
     #endif
-    bc95_send_command(cmd_reboot, "REBOOT", DISABLE, DISABLE);
+    //bc95_send_command(cmd_reboot, "REBOOT", DISABLE, DISABLE);
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, ENABLE);
+    HAL_Delay(150);
+    HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, DISABLE);
     bc95_init();
 }
 
@@ -415,7 +418,7 @@ uint8_t bc95_send_coap(uint8_t *ack){
     j += strlen(bc95_status.iccid)*2;
     j += sprintf(cmd+j, "%02X", device_status.boot);
     j += sprintf(cmd+j, "%04X%04X", device_status.raw_tds, device_status.pure_tds);
-    j += sprintf(cmd+j, "%08X%08X", device_status.time   , device_status.flow);
+    j += sprintf(cmd+j, "%08X%08X", device_status.create_water_time_m , device_status.flow);
     j += sprintf(cmd+j, "%02X%04X", bc95_status.csq      , bc95_status.snr);
     j += sprintf(cmd+j, "%02X%02X%02X", device_error.leakage, device_error.raw_no_water, device_error.create_water_too_long);
     j += sprintf(cmd+j, "%02X", device_status.processing_status);

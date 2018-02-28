@@ -10,19 +10,14 @@
 #define LCD_H_
 
 
-
-#ifndef __BSP_LCD_GPRS_H
-#define __BSP_LCD_GPRS_H
-
-#define __DELAY_BACKWARD_COMPATIBLE__
-//#include <integer.h>
-#include <util/delay.h>
-#include <avr/io.h>
-
 #include "usart.h"
 #include <math.h>
+#include "app.h"
 
+#define uchar uint8_t
+#define uint  uint32_t
 
+#define _delay_ms(time) HAL_Delay(time)
 
 typedef enum{
 	LCD_TRUE,
@@ -36,8 +31,9 @@ typedef enum{
 	 uchar (*bps)(uint );
 	 uchar (*clr)(uchar c);
 	 uchar (*lcdon)(lcd_res_e res_e);
-	 uchar (*fsimg)(uint addr,uchar x,uchar y, uchar w,uchar h,uchar mode);
-	 uchar (*fs_dload)(uint size);
+	 uchar (*fsimg)(uchar *addr,uchar x,uchar y, uchar w,uchar h,uchar mode);
+         //uchar (lcd_fsimg)(uchar *addr,uchar x,uchar y, uchar w,uchar h,uchar mode)
+	 uchar (*fs_dload)(uchar* size);
 	 uchar (*dir)(lcd_res_e V);
 	 uchar (*bl)(uchar p);
 	 uchar (*ps)(uchar x,uchar y,uchar c);
@@ -62,24 +58,24 @@ typedef enum{
 	
 	void (*fsimg_fan)(void);
 
-	 uchar (*fsimg_g)(lcd_res_e flag);
-	 uchar (*fsimg_l)(lcd_res_e flag);
-	 uchar (*fsimg_n)(lcd_res_e flag);
-	 uchar (*fsimg_y)(lcd_res_e flag);
+	 uchar (*fsimg_g)(lcd_res_e flag);				//故障
+	 uchar (*fsimg_l)(lcd_res_e flag);				//漏水
+	 uchar (*fsimg_n)(lcd_res_e flag);				//
+	 uchar (*fsimg_y)(lcd_res_e flag);				//原水
 
 
-	 uchar (*signal)(uchar n);
+	 uchar (*signal)(uchar n);						//信号
 	
 	 //uchar lcd_val(uchar x,uchar y,uint val,uint c);
 		uchar (*box_tds_in)(uchar n,uchar c);
-		void (*boxn_tds_in)(uchar n);
-		uchar (*box_tds_in_bottom)(void);
+		void (*boxn_tds_in)(uchar n);				//原水tds 多少格
+		uchar (*box_tds_in_bottom)(void);			//调用一次
 
 		uchar (*box_tds_out)(uchar n,uchar c);
 		void (*boxn_tds_out)(uchar n);
 		uchar (*box_tds_out_bottom)(void);
 
-		uchar (*box_1)(uchar n,uchar c);
+		uchar (*box_1)(uchar n,uchar c);			//滤芯
 		void (*boxn_1)(uchar n);
 
 		uchar (*box_2)(uchar n,uchar c);
@@ -94,12 +90,12 @@ typedef enum{
 		uchar (*box_5)(uchar n,uchar c);
 		void (*boxn_5)(uchar n);
 
-		uchar (*val_tds_in)(uint val);
+		uchar (*val_tds_in)(uint val);				//原水tds数字
 		uchar (*val_tds_out)(uint val);
 
-		uchar (*date)(uint val);
-		uchar (*flow)(uint water);
-		uchar (*title)(char * );
+		uchar (*date)(uint val);					//时间
+		uchar (*flow)(uint water);					//流量
+		uchar (*title)(char * );					//设备编号
 
 		uchar (*flash_point)(uchar x,uchar y,uchar old_c,uchar new_c);
 
@@ -140,15 +136,11 @@ void init_lcd_opt(void);
 
 
 
-#define     LCD_USART_Config()			Init_LCD()
-#define     LCD_CLEAN_RX()              clean_rebuff0()
+//#define     LCD_USART_Config()			Init_LCD()
 
-#define     LCD_TX(cmd)                	hal_uart
+#define     LCD_TX(cmd)                	HAL_UART_Transmit_DMA(&huart2, cmd, (uint16_t)strlen(cmd));
 
-
-#define     LCD_IS_RX()                 ((UCSR0A & (1<<UDRE0)) == RESET)
-#define     LCD_RX(len)                 ((char *)get_rebuff0(&(len)))
-#define     LCD_DELAY(time)             _delay_ms(time)                 //ʱ
+#define     LCD_DELAY(time)             HAL_Delay(time)                 //ʱ
 
 
 

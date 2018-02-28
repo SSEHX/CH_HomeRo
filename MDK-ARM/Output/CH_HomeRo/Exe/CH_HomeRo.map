@@ -28,17 +28,9 @@ Discarded input sections
                 0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .text.__heap_unlock
                 0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
- .text.__printf_lock
-                0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
- .text.__printf_unlock
-                0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .text.__scanf_lock
                 0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .text.__scanf_unlock
-                0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
- .text.__debug_io_lock
-                0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
- .text.__debug_io_unlock
                 0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .text.abort    0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .text.__assert
@@ -56,8 +48,6 @@ Discarded input sections
  .text.__sync_synchronize
                 0x0000000000000000        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .text.__getchar
-                0x0000000000000000        0x4 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
- .text.__putchar
                 0x0000000000000000        0x4 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .text.__open   0x0000000000000000        0x4 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .text.__close  0x0000000000000000        0x4 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
@@ -530,8 +520,6 @@ Discarded input sections
                 0x0000000000000000       0x30 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.HAL_TIM_IC_Stop
                 0x0000000000000000       0x50 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
- .text.HAL_TIM_IC_Start_IT
-                0x0000000000000000       0xbc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.HAL_TIM_IC_Stop_IT
                 0x0000000000000000       0xdc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.HAL_TIM_IC_Start_DMA
@@ -602,6 +590,8 @@ Discarded input sections
                 0x0000000000000000       0x9c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.HAL_TIM_PeriodElapsedCallback
                 0x0000000000000000        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+ .text.HAL_TIM_IC_CaptureCallback
+                0x0000000000000000        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.HAL_TIM_ErrorCallback
                 0x0000000000000000        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.HAL_TIM_Base_GetState
@@ -636,8 +626,6 @@ Discarded input sections
                 0x0000000000000000       0xa0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.TIM_SlaveTimer_SetConfig
                 0x0000000000000000      0x114 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
- .text.TIM_CCxChannelCmd
-                0x0000000000000000       0x3c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text          0x0000000000000000        0x0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
  .data          0x0000000000000000        0x0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
  .bss           0x0000000000000000        0x0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
@@ -972,6 +960,8 @@ Discarded input sections
                 0x0000000000000000        0xb Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
  .data.cmd_set_server_ip
                 0x0000000000000000       0x1f Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+ .data.cmd_reboot
+                0x0000000000000000        0x9 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
  .data.cmd_error
                 0x0000000000000000        0x6 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
  .data.cmd_coap_send_ok
@@ -992,8 +982,8 @@ Discarded input sections
  .text.HAL_ADC_ConvCpltCallback
                 0x0000000000000000       0x14 Output/CH_HomeRo CH_HomeRo/Obj/tds.o
  .debug_frame   0x0000000000000000       0x4c Output/CH_HomeRo CH_HomeRo/Obj/tds.o
- .debug_info    0x0000000000000000      0xf20 Output/CH_HomeRo CH_HomeRo/Obj/tds.o
- .debug_abbrev  0x0000000000000000      0x1d8 Output/CH_HomeRo CH_HomeRo/Obj/tds.o
+ .debug_info    0x0000000000000000      0xf6c Output/CH_HomeRo CH_HomeRo/Obj/tds.o
+ .debug_abbrev  0x0000000000000000      0x1e9 Output/CH_HomeRo CH_HomeRo/Obj/tds.o
  .debug_pubnames
                 0x0000000000000000       0x5b Output/CH_HomeRo CH_HomeRo/Obj/tds.o
  .debug_pubtypes
@@ -1002,7 +992,7 @@ Discarded input sections
                 0x0000000000000000       0x28 Output/CH_HomeRo CH_HomeRo/Obj/tds.o
  .debug_ranges  0x0000000000000000       0x18 Output/CH_HomeRo CH_HomeRo/Obj/tds.o
  .debug_line    0x0000000000000000      0x27d Output/CH_HomeRo CH_HomeRo/Obj/tds.o
- .debug_str     0x0000000000000000      0xdf5 Output/CH_HomeRo CH_HomeRo/Obj/tds.o
+ .debug_str     0x0000000000000000      0xe48 Output/CH_HomeRo CH_HomeRo/Obj/tds.o
  .comment       0x0000000000000000       0x4d Output/CH_HomeRo CH_HomeRo/Obj/tds.o
  .ARM.attributes
                 0x0000000000000000       0x33 Output/CH_HomeRo CH_HomeRo/Obj/tds.o
@@ -1249,8 +1239,6 @@ Discarded input sections
                 0x0000000000000000       0x2a /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.memcmp
                 0x0000000000000000       0x6a /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
- .text.libc.printf
-                0x0000000000000000       0x40 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.putchar
                 0x0000000000000000       0x1a /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.puts
@@ -2346,8 +2334,6 @@ Discarded input sections
                 0x0000000000000000       0x16 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
  .text.libdebugio.debug_getchar
                 0x0000000000000000       0x16 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .text.libdebugio.debug_putchar
-                0x0000000000000000       0x18 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
  .text.libdebugio.debug_puts
                 0x0000000000000000        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
  .text.libdebugio.debug_rewind
@@ -2448,9 +2434,6 @@ Discarded input sections
                 0x0000000000000000      0x400 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
  .bss.libdebugio.tmpnam_buffer
                 0x0000000000000000      0x100 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .comment       0x0000000000000000       0x4d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
  .text          0x0000000000000000        0x0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
  .data          0x0000000000000000        0x0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
  .bss           0x0000000000000000        0x0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
@@ -2516,15 +2499,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
  .data          0x0000000000000000        0x0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
  .bss           0x0000000000000000        0x0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .text.libdebugio.__do_debug_operation
-                0x0000000000000000       0x30 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .bss.libdebugio.dbgCntrlWord_mempoll
-                0x0000000000000000        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .bss.libdebugio.dbgCommWord
-                0x0000000000000000        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .comment       0x0000000000000000       0x4d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
- .ARM.attributes
-                0x0000000000000000       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
  .text          0x0000000000000000        0x0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
  .data          0x0000000000000000        0x0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
  .bss           0x0000000000000000        0x0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(do_nv_debug_operation.o)
@@ -2779,8 +2753,8 @@ FLASH            0x0000000008000000 0x0000000000010000 xr
 
 Linker script and memory map
 
-                0x0000000008005d18                __vfprintf = __vfprintf_float_long_wchar
-                0x00000000080073b8                __vfscanf = __vfscanf_float_long_cc
+                0x0000000008005f20                __vfprintf = __vfprintf_float_long_wchar
+                0x00000000080075c0                __vfscanf = __vfscanf_float_long_cc
                 0x0000000020000000                __RAM_segment_start__ = 0x20000000
                 0x0000000020005000                __RAM_segment_end__ = 0x20005000
                 0x0000000000005000                __RAM_segment_size__ = 0x5000
@@ -2893,7 +2867,7 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT (((__init_rodata_start__ == __init_rodata_end__) || ((__init_rodata_end__ >= __FLASH_segment_start__) && (__init_rodata_end__ <= __FLASH_segment_end__))), error: .init_rodata is too large to fit in FLASH memory segment)
                 0x0000000008000334                __text_load_start__ = ALIGN (__init_rodata_end__, 0x4)
 
-.text           0x0000000008000334     0x806c
+.text           0x0000000008000334     0x82a4
                 0x0000000008000334                __text_start__ = .
  *(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.* .gcc_except_table .ARM.extab* .gnu.linkonce.armextab.*)
  .glue_7        0x0000000008000334        0x0 linker stubs
@@ -2901,671 +2875,702 @@ Linker script and memory map
  .text.__aeabi_read_tp
                 0x0000000008000334        0x8 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
                 0x0000000008000334                __aeabi_read_tp
- .text.main     0x000000000800033c       0xcc Output/CH_HomeRo CH_HomeRo/Obj/main.o
-                0x000000000800033c                main
+ .text.__printf_lock
+                0x000000000800033c        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
+                0x000000000800033c                __printf_lock
+ .text.__printf_unlock
+                0x000000000800033e        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
+                0x000000000800033e                __printf_unlock
+ .text.__debug_io_lock
+                0x0000000008000340        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
+                0x0000000008000340                __debug_io_lock
+ .text.__debug_io_unlock
+                0x0000000008000342        0x2 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
+                0x0000000008000342                __debug_io_unlock
+ .text.__putchar
+                0x0000000008000344        0x4 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
+                0x0000000008000344                __putchar
+ .text.main     0x0000000008000348      0x124 Output/CH_HomeRo CH_HomeRo/Obj/main.o
+                0x0000000008000348                main
  .text.SystemClock_Config
-                0x0000000008000408       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/main.o
-                0x0000000008000408                SystemClock_Config
+                0x000000000800046c       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/main.o
+                0x000000000800046c                SystemClock_Config
  .text._Error_Handler
-                0x00000000080004cc        0x8 Output/CH_HomeRo CH_HomeRo/Obj/main.o
-                0x00000000080004cc                _Error_Handler
+                0x0000000008000530        0x8 Output/CH_HomeRo CH_HomeRo/Obj/main.o
+                0x0000000008000530                _Error_Handler
  .text.MX_SPI2_Init
-                0x00000000080004d4       0x74 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
-                0x00000000080004d4                MX_SPI2_Init
+                0x0000000008000538       0x74 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
+                0x0000000008000538                MX_SPI2_Init
  .text.HAL_SPI_MspInit
-                0x0000000008000548       0x6c Output/CH_HomeRo CH_HomeRo/Obj/spi.o
-                0x0000000008000548                HAL_SPI_MspInit
+                0x00000000080005ac       0x6c Output/CH_HomeRo CH_HomeRo/Obj/spi.o
+                0x00000000080005ac                HAL_SPI_MspInit
  .text.HAL_MspInit
-                0x00000000080005b4       0xa0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
-                0x00000000080005b4                HAL_MspInit
+                0x0000000008000618       0xa0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
+                0x0000000008000618                HAL_MspInit
  .text.MX_USART1_UART_Init
-                0x0000000008000654       0x68 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
-                0x0000000008000654                MX_USART1_UART_Init
+                0x00000000080006b8       0x68 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+                0x00000000080006b8                MX_USART1_UART_Init
  .text.MX_USART2_UART_Init
-                0x00000000080006bc       0x58 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
-                0x00000000080006bc                MX_USART2_UART_Init
+                0x0000000008000720       0x58 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+                0x0000000008000720                MX_USART2_UART_Init
  .text.HAL_UART_MspInit
-                0x0000000008000714      0x1e0 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
-                0x0000000008000714                HAL_UART_MspInit
+                0x0000000008000778      0x1e0 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+                0x0000000008000778                HAL_UART_MspInit
  .text.MX_ADC1_Init
-                0x00000000080008f4       0xc0 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
-                0x00000000080008f4                MX_ADC1_Init
+                0x0000000008000958       0xc0 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
+                0x0000000008000958                MX_ADC1_Init
  .text.HAL_ADC_MspInit
-                0x00000000080009b4       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
-                0x00000000080009b4                HAL_ADC_MspInit
+                0x0000000008000a18       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
+                0x0000000008000a18                HAL_ADC_MspInit
  .text.MX_TIM1_Init
-                0x0000000008000a78       0x98 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x0000000008000a78                MX_TIM1_Init
+                0x0000000008000adc       0x98 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x0000000008000adc                MX_TIM1_Init
  .text.MX_TIM2_Init
-                0x0000000008000b10       0x90 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x0000000008000b10                MX_TIM2_Init
+                0x0000000008000b74       0x90 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x0000000008000b74                MX_TIM2_Init
  .text.MX_TIM3_Init
-                0x0000000008000ba0       0xb8 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x0000000008000ba0                MX_TIM3_Init
+                0x0000000008000c04       0xb8 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x0000000008000c04                MX_TIM3_Init
  .text.MX_TIM4_Init
-                0x0000000008000c58       0x94 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x0000000008000c58                MX_TIM4_Init
+                0x0000000008000cbc       0x94 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x0000000008000cbc                MX_TIM4_Init
  .text.HAL_TIM_Base_MspInit
-                0x0000000008000cec       0xa4 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x0000000008000cec                HAL_TIM_Base_MspInit
+                0x0000000008000d50       0xa4 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x0000000008000d50                HAL_TIM_Base_MspInit
  .text.HAL_TIM_IC_MspInit
-                0x0000000008000d90       0x80 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x0000000008000d90                HAL_TIM_IC_MspInit
+                0x0000000008000df4       0x80 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x0000000008000df4                HAL_TIM_IC_MspInit
  .text.MX_DMA_Init
-                0x0000000008000e10       0x68 Output/CH_HomeRo CH_HomeRo/Obj/dma.o
-                0x0000000008000e10                MX_DMA_Init
+                0x0000000008000e74       0x68 Output/CH_HomeRo CH_HomeRo/Obj/dma.o
+                0x0000000008000e74                MX_DMA_Init
  .text.MX_GPIO_Init
-                0x0000000008000e78      0x16c Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
-                0x0000000008000e78                MX_GPIO_Init
+                0x0000000008000edc      0x16c Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
+                0x0000000008000edc                MX_GPIO_Init
  .text.NMI_Handler
-                0x0000000008000fe4        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008000fe4                NMI_Handler
+                0x0000000008001048        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x0000000008001048                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008000fe8        0x2 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008000fe8                HardFault_Handler
+                0x000000000800104c        0x2 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x000000000800104c                HardFault_Handler
  .text.SVC_Handler
-                0x0000000008000fea        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008000fea                SVC_Handler
+                0x000000000800104e        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x000000000800104e                SVC_Handler
  .text.PendSV_Handler
-                0x0000000008000fee        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008000fee                PendSV_Handler
+                0x0000000008001052        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x0000000008001052                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008000ff2        0xe Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008000ff2                SysTick_Handler
+                0x0000000008001056        0xe Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x0000000008001056                SysTick_Handler
  .text.DMA1_Channel1_IRQHandler
-                0x0000000008001000       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008001000                DMA1_Channel1_IRQHandler
+                0x0000000008001064       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x0000000008001064                DMA1_Channel1_IRQHandler
  .text.DMA1_Channel4_IRQHandler
-                0x0000000008001010       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008001010                DMA1_Channel4_IRQHandler
+                0x0000000008001074       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x0000000008001074                DMA1_Channel4_IRQHandler
  .text.DMA1_Channel5_IRQHandler
-                0x0000000008001020       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008001020                DMA1_Channel5_IRQHandler
+                0x0000000008001084       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x0000000008001084                DMA1_Channel5_IRQHandler
  .text.DMA1_Channel7_IRQHandler
-                0x0000000008001030       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008001030                DMA1_Channel7_IRQHandler
+                0x0000000008001094       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x0000000008001094                DMA1_Channel7_IRQHandler
  .text.TIM2_IRQHandler
-                0x0000000008001040       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008001040                TIM2_IRQHandler
+                0x00000000080010a4       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x00000000080010a4                TIM2_IRQHandler
  .text.TIM3_IRQHandler
-                0x0000000008001050       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008001050                TIM3_IRQHandler
+                0x00000000080010b4       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x00000000080010b4                TIM3_IRQHandler
  .text.TIM4_IRQHandler
-                0x0000000008001060       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008001060                TIM4_IRQHandler
+                0x00000000080010c4       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x00000000080010c4                TIM4_IRQHandler
  .text.USART1_IRQHandler
-                0x0000000008001070       0x18 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                0x0000000008001070                USART1_IRQHandler
+                0x00000000080010d4       0x18 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                0x00000000080010d4                USART1_IRQHandler
  .text.SystemInit
-                0x0000000008001088       0x60 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
-                0x0000000008001088                SystemInit
+                0x00000000080010ec       0x60 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
+                0x00000000080010ec                SystemInit
  .text.HAL_GPIO_Init
-                0x00000000080010e8      0x2b4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
-                0x00000000080010e8                HAL_GPIO_Init
+                0x000000000800114c      0x2b4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
+                0x000000000800114c                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x000000000800139c       0x30 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
-                0x000000000800139c                HAL_GPIO_ReadPin
+                0x0000000008001400       0x30 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
+                0x0000000008001400                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x00000000080013cc       0x32 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
-                0x00000000080013cc                HAL_GPIO_WritePin
+                0x0000000008001430       0x32 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
+                0x0000000008001430                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x00000000080013fe       0x1e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
-                0x00000000080013fe                HAL_GPIO_TogglePin
+                0x0000000008001462       0x1e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
+                0x0000000008001462                HAL_GPIO_TogglePin
  .text.HAL_UART_Init
-                0x000000000800141c       0x98 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x000000000800141c                HAL_UART_Init
+                0x0000000008001480       0x98 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001480                HAL_UART_Init
  .text.HAL_UART_Transmit_DMA
-                0x00000000080014b4       0xe0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x00000000080014b4                HAL_UART_Transmit_DMA
+                0x0000000008001518       0xe0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001518                HAL_UART_Transmit_DMA
  .text.HAL_UART_Receive_DMA
-                0x0000000008001594      0x104 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x0000000008001594                HAL_UART_Receive_DMA
+                0x00000000080015f8      0x104 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x00000000080015f8                HAL_UART_Receive_DMA
  .text.HAL_UART_DMAStop
-                0x0000000008001698       0xb4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x0000000008001698                HAL_UART_DMAStop
+                0x00000000080016fc       0xb4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x00000000080016fc                HAL_UART_DMAStop
  .text.HAL_UART_IRQHandler
-                0x000000000800174c      0x1f4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x000000000800174c                HAL_UART_IRQHandler
+                0x00000000080017b0      0x1f4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x00000000080017b0                HAL_UART_IRQHandler
  .text.HAL_UART_TxCpltCallback
-                0x0000000008001940        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x0000000008001940                HAL_UART_TxCpltCallback
+                0x00000000080019a4        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x00000000080019a4                HAL_UART_TxCpltCallback
  .text.HAL_UART_TxHalfCpltCallback
-                0x000000000800194a        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x000000000800194a                HAL_UART_TxHalfCpltCallback
+                0x00000000080019ae        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x00000000080019ae                HAL_UART_TxHalfCpltCallback
  .text.HAL_UART_RxCpltCallback
-                0x0000000008001954        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x0000000008001954                HAL_UART_RxCpltCallback
+                0x00000000080019b8        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x00000000080019b8                HAL_UART_RxCpltCallback
  .text.HAL_UART_RxHalfCpltCallback
-                0x000000000800195e        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x000000000800195e                HAL_UART_RxHalfCpltCallback
+                0x00000000080019c2        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x00000000080019c2                HAL_UART_RxHalfCpltCallback
  .text.HAL_UART_ErrorCallback
-                0x0000000008001968        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
-                0x0000000008001968                HAL_UART_ErrorCallback
+                0x00000000080019cc        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x00000000080019cc                HAL_UART_ErrorCallback
  .text.UART_DMATransmitCplt
-                0x0000000008001972       0x50 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x00000000080019d6       0x50 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_DMATxHalfCplt
-                0x00000000080019c2       0x1a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001a26       0x1a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_DMAReceiveCplt
-                0x00000000080019dc       0x66 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001a40       0x66 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_DMARxHalfCplt
-                0x0000000008001a42       0x1a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001aa6       0x1a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_DMAError
-                0x0000000008001a5c       0x92 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001ac0       0x92 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_EndTxTransfer
-                0x0000000008001aee       0x22 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001b52       0x22 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_EndRxTransfer
-                0x0000000008001b10       0x32 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001b74       0x32 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_DMAAbortOnError
-                0x0000000008001b42       0x26 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001ba6       0x26 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_Transmit_IT
-                0x0000000008001b68       0xa0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001bcc       0xa0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_EndTransmit_IT
-                0x0000000008001c08       0x2e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001c6c       0x2e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.UART_Receive_IT
-                0x0000000008001c36      0x100 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
- *fill*         0x0000000008001d36        0x2 
+                0x0000000008001c9a      0x100 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+ *fill*         0x0000000008001d9a        0x2 
  .text.UART_SetConfig
-                0x0000000008001d38      0x22c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+                0x0000000008001d9c      0x22c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
  .text.HAL_Init
-                0x0000000008001f64       0x28 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
-                0x0000000008001f64                HAL_Init
+                0x0000000008001fc8       0x28 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+                0x0000000008001fc8                HAL_Init
  .text.HAL_InitTick
-                0x0000000008001f8c       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
-                0x0000000008001f8c                HAL_InitTick
+                0x0000000008001ff0       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+                0x0000000008001ff0                HAL_InitTick
  .text.HAL_IncTick
-                0x0000000008001fc4       0x14 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
-                0x0000000008001fc4                HAL_IncTick
+                0x0000000008002028       0x14 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+                0x0000000008002028                HAL_IncTick
  .text.HAL_GetTick
-                0x0000000008001fd8        0xc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
-                0x0000000008001fd8                HAL_GetTick
+                0x000000000800203c        0xc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+                0x000000000800203c                HAL_GetTick
  .text.HAL_Delay
-                0x0000000008001fe4       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
-                0x0000000008001fe4                HAL_Delay
+                0x0000000008002048       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+                0x0000000008002048                HAL_Delay
  .text.HAL_FLASH_Program
-                0x000000000800201c      0x100 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
-                0x000000000800201c                HAL_FLASH_Program
+                0x0000000008002080      0x100 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+                0x0000000008002080                HAL_FLASH_Program
  .text.HAL_FLASH_Unlock
-                0x000000000800211c       0x30 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
-                0x000000000800211c                HAL_FLASH_Unlock
+                0x0000000008002180       0x30 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+                0x0000000008002180                HAL_FLASH_Unlock
  .text.HAL_FLASH_Lock
-                0x000000000800214c       0x18 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
-                0x000000000800214c                HAL_FLASH_Lock
+                0x00000000080021b0       0x18 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+                0x00000000080021b0                HAL_FLASH_Lock
  .text.FLASH_Program_HalfWord
-                0x0000000008002164       0x34 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+                0x00000000080021c8       0x34 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
  .text.FLASH_WaitForLastOperation
-                0x0000000008002198       0x88 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
-                0x0000000008002198                FLASH_WaitForLastOperation
+                0x00000000080021fc       0x88 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+                0x00000000080021fc                FLASH_WaitForLastOperation
  .text.FLASH_SetErrorCode
-                0x0000000008002220       0x98 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+                0x0000000008002284       0x98 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
  .text.HAL_ADC_Init
-                0x00000000080022b8      0x1bc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
-                0x00000000080022b8                HAL_ADC_Init
+                0x000000000800231c      0x1bc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
+                0x000000000800231c                HAL_ADC_Init
  .text.HAL_ADC_ConfigChannel
-                0x0000000008002474      0x1f4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
-                0x0000000008002474                HAL_ADC_ConfigChannel
+                0x00000000080024d8      0x1f4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
+                0x00000000080024d8                HAL_ADC_ConfigChannel
  .text.ADC_ConversionStop_Disable
-                0x0000000008002668       0x72 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
-                0x0000000008002668                ADC_ConversionStop_Disable
- *fill*         0x00000000080026da        0x2 
+                0x00000000080026cc       0x72 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
+                0x00000000080026cc                ADC_ConversionStop_Disable
+ *fill*         0x000000000800273e        0x2 
  .text.HAL_RCC_OscConfig
-                0x00000000080026dc      0x4d0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
-                0x00000000080026dc                HAL_RCC_OscConfig
+                0x0000000008002740      0x4d0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+                0x0000000008002740                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x0000000008002bac      0x1e8 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
-                0x0000000008002bac                HAL_RCC_ClockConfig
+                0x0000000008002c10      0x1e8 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+                0x0000000008002c10                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x0000000008002d94       0xbc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
-                0x0000000008002d94                HAL_RCC_GetSysClockFreq
+                0x0000000008002df8       0xbc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+                0x0000000008002df8                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x0000000008002e50        0xc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
-                0x0000000008002e50                HAL_RCC_GetHCLKFreq
+                0x0000000008002eb4        0xc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+                0x0000000008002eb4                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x0000000008002e5c       0x28 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
-                0x0000000008002e5c                HAL_RCC_GetPCLK1Freq
+                0x0000000008002ec0       0x28 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+                0x0000000008002ec0                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x0000000008002e84       0x28 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
-                0x0000000008002e84                HAL_RCC_GetPCLK2Freq
+                0x0000000008002ee8       0x28 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+                0x0000000008002ee8                HAL_RCC_GetPCLK2Freq
  .text.RCC_Delay
-                0x0000000008002eac       0x34 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+                0x0000000008002f10       0x34 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
  .text.NVIC_SetPriorityGrouping
-                0x0000000008002ee0       0x40 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x0000000008002f44       0x40 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
  .text.NVIC_GetPriorityGrouping
-                0x0000000008002f20       0x14 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x0000000008002f84       0x14 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
  .text.NVIC_EnableIRQ
-                0x0000000008002f34       0x2c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x0000000008002f98       0x2c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
  .text.NVIC_SetPriority
-                0x0000000008002f60       0x50 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x0000000008002fc4       0x50 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
  .text.NVIC_EncodePriority
-                0x0000000008002fb0       0x58 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x0000000008003014       0x58 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
  .text.SysTick_Config
-                0x0000000008003008       0x40 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x000000000800306c       0x40 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
  .text.HAL_NVIC_SetPriorityGrouping
-                0x0000000008003048       0x14 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
-                0x0000000008003048                HAL_NVIC_SetPriorityGrouping
+                0x00000000080030ac       0x14 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x00000000080030ac                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x000000000800305c       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
-                0x000000000800305c                HAL_NVIC_SetPriority
+                0x00000000080030c0       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x00000000080030c0                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0000000008003094       0x1c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
-                0x0000000008003094                HAL_NVIC_EnableIRQ
+                0x00000000080030f8       0x1c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x00000000080030f8                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x00000000080030b0       0x16 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
-                0x00000000080030b0                HAL_SYSTICK_Config
- *fill*         0x00000000080030c6        0x2 
+                0x0000000008003114       0x16 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x0000000008003114                HAL_SYSTICK_Config
+ *fill*         0x000000000800312a        0x2 
  .text.HAL_SYSTICK_CLKSourceConfig
-                0x00000000080030c8       0x30 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
-                0x00000000080030c8                HAL_SYSTICK_CLKSourceConfig
+                0x000000000800312c       0x30 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x000000000800312c                HAL_SYSTICK_CLKSourceConfig
  .text.HAL_SYSTICK_IRQHandler
-                0x00000000080030f8        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
-                0x00000000080030f8                HAL_SYSTICK_IRQHandler
+                0x000000000800315c        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x000000000800315c                HAL_SYSTICK_IRQHandler
  .text.HAL_SYSTICK_Callback
-                0x0000000008003102        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
-                0x0000000008003102                HAL_SYSTICK_Callback
+                0x0000000008003166        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+                0x0000000008003166                HAL_SYSTICK_Callback
  .text.HAL_TIM_Base_Init
-                0x0000000008003106       0x54 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x0000000008003106                HAL_TIM_Base_Init
+                0x000000000800316a       0x54 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x000000000800316a                HAL_TIM_Base_Init
  .text.HAL_TIM_Base_Start_IT
-                0x000000000800315a       0x2c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x000000000800315a                HAL_TIM_Base_Start_IT
+                0x00000000080031be       0x2c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x00000000080031be                HAL_TIM_Base_Start_IT
  .text.HAL_TIM_Base_Stop_IT
-                0x0000000008003186       0x4c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x0000000008003186                HAL_TIM_Base_Stop_IT
+                0x00000000080031ea       0x4c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x00000000080031ea                HAL_TIM_Base_Stop_IT
  .text.HAL_TIM_IC_Init
-                0x00000000080031d2       0x54 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x00000000080031d2                HAL_TIM_IC_Init
+                0x0000000008003236       0x54 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003236                HAL_TIM_IC_Init
+ *fill*         0x000000000800328a        0x2 
+ .text.HAL_TIM_IC_Start_IT
+                0x000000000800328c       0xbc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x000000000800328c                HAL_TIM_IC_Start_IT
  .text.HAL_TIM_IRQHandler
-                0x0000000008003226      0x20e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x0000000008003226                HAL_TIM_IRQHandler
+                0x0000000008003348      0x20e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003348                HAL_TIM_IRQHandler
  .text.HAL_TIM_IC_ConfigChannel
-                0x0000000008003434      0x136 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x0000000008003434                HAL_TIM_IC_ConfigChannel
+                0x0000000008003556      0x136 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003556                HAL_TIM_IC_ConfigChannel
  .text.HAL_TIM_ConfigClockSource
-                0x000000000800356a      0x1b4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x000000000800356a                HAL_TIM_ConfigClockSource
+                0x000000000800368c      0x1b4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x000000000800368c                HAL_TIM_ConfigClockSource
  .text.HAL_TIM_OC_DelayElapsedCallback
-                0x000000000800371e        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x000000000800371e                HAL_TIM_OC_DelayElapsedCallback
- .text.HAL_TIM_IC_CaptureCallback
-                0x0000000008003728        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x0000000008003728                HAL_TIM_IC_CaptureCallback
+                0x0000000008003840        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003840                HAL_TIM_OC_DelayElapsedCallback
  .text.HAL_TIM_PWM_PulseFinishedCallback
-                0x0000000008003732        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x0000000008003732                HAL_TIM_PWM_PulseFinishedCallback
+                0x000000000800384a        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x000000000800384a                HAL_TIM_PWM_PulseFinishedCallback
  .text.HAL_TIM_TriggerCallback
-                0x000000000800373c        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x000000000800373c                HAL_TIM_TriggerCallback
- *fill*         0x0000000008003746        0x2 
+                0x0000000008003854        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003854                HAL_TIM_TriggerCallback
+ *fill*         0x000000000800385e        0x2 
  .text.TIM_Base_SetConfig
-                0x0000000008003748       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x0000000008003748                TIM_Base_SetConfig
+                0x0000000008003860       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003860                TIM_Base_SetConfig
  .text.TIM_TI1_SetConfig
-                0x000000000800380c       0xb4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
-                0x000000000800380c                TIM_TI1_SetConfig
+                0x0000000008003924       0xb4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003924                TIM_TI1_SetConfig
  .text.TIM_TI1_ConfigInputStage
-                0x00000000080038c0       0x5c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x00000000080039d8       0x5c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.TIM_TI2_SetConfig
-                0x000000000800391c       0x78 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003a34       0x78 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.TIM_TI2_ConfigInputStage
-                0x0000000008003994       0x5e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003aac       0x5e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.TIM_TI3_SetConfig
-                0x00000000080039f2       0x76 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003b0a       0x76 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.TIM_TI4_SetConfig
-                0x0000000008003a68       0x78 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003b80       0x78 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.TIM_ITRx_SetConfig
-                0x0000000008003ae0       0x3a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003bf8       0x3a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
  .text.TIM_ETR_SetConfig
-                0x0000000008003b1a       0x3a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003c32       0x3a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+ .text.TIM_CCxChannelCmd
+                0x0000000008003c6c       0x3c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+                0x0000000008003c6c                TIM_CCxChannelCmd
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x0000000008003b54       0x80 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
-                0x0000000008003b54                HAL_TIMEx_MasterConfigSynchronization
+                0x0000000008003ca8       0x80 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
+                0x0000000008003ca8                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_TIMEx_CommutationCallback
-                0x0000000008003bd4        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
-                0x0000000008003bd4                HAL_TIMEx_CommutationCallback
+                0x0000000008003d28        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
+                0x0000000008003d28                HAL_TIMEx_CommutationCallback
  .text.HAL_TIMEx_BreakCallback
-                0x0000000008003bde        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
-                0x0000000008003bde                HAL_TIMEx_BreakCallback
+                0x0000000008003d32        0xa Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
+                0x0000000008003d32                HAL_TIMEx_BreakCallback
  .text.HAL_DMA_Init
-                0x0000000008003be8       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
-                0x0000000008003be8                HAL_DMA_Init
+                0x0000000008003d3c       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+                0x0000000008003d3c                HAL_DMA_Init
  .text.HAL_DMA_Start_IT
-                0x0000000008003cac       0xc2 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
-                0x0000000008003cac                HAL_DMA_Start_IT
+                0x0000000008003e00       0xc2 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+                0x0000000008003e00                HAL_DMA_Start_IT
  .text.HAL_DMA_Abort
-                0x0000000008003d6e       0x54 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
-                0x0000000008003d6e                HAL_DMA_Abort
- *fill*         0x0000000008003dc2        0x2 
+                0x0000000008003ec2       0x54 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+                0x0000000008003ec2                HAL_DMA_Abort
+ *fill*         0x0000000008003f16        0x2 
  .text.HAL_DMA_Abort_IT
-                0x0000000008003dc4       0xfc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
-                0x0000000008003dc4                HAL_DMA_Abort_IT
+                0x0000000008003f18       0xfc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+                0x0000000008003f18                HAL_DMA_Abort_IT
  .text.HAL_DMA_IRQHandler
-                0x0000000008003ec0      0x224 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
-                0x0000000008003ec0                HAL_DMA_IRQHandler
+                0x0000000008004014      0x224 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+                0x0000000008004014                HAL_DMA_IRQHandler
  .text.DMA_SetConfig
-                0x00000000080040e4       0x52 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
- *fill*         0x0000000008004136        0x2 
+                0x0000000008004238       0x52 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+ *fill*         0x000000000800428a        0x2 
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x0000000008004138      0x170 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
-                0x0000000008004138                HAL_RCCEx_PeriphCLKConfig
+                0x000000000800428c      0x170 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
+                0x000000000800428c                HAL_RCCEx_PeriphCLKConfig
  .text.HAL_FLASHEx_Erase
-                0x00000000080042a8       0xe0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
-                0x00000000080042a8                HAL_FLASHEx_Erase
+                0x00000000080043fc       0xe0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
+                0x00000000080043fc                HAL_FLASHEx_Erase
  .text.FLASH_MassErase
-                0x0000000008004388       0x30 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
+                0x00000000080044dc       0x30 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
  .text.FLASH_PageErase
-                0x00000000080043b8       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
-                0x00000000080043b8                FLASH_PageErase
+                0x000000000800450c       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
+                0x000000000800450c                FLASH_PageErase
  .text.HAL_SPI_Init
-                0x00000000080043f0       0xc6 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
-                0x00000000080043f0                HAL_SPI_Init
- *fill*         0x00000000080044b6        0x2 
+                0x0000000008004544       0xc6 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
+                0x0000000008004544                HAL_SPI_Init
+ *fill*         0x000000000800460a        0x2 
  .text.get_low_switch
-                0x00000000080044b8       0x18 Output/CH_HomeRo CH_HomeRo/Obj/app.o
-                0x00000000080044b8                get_low_switch
+                0x000000000800460c       0x18 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x000000000800460c                get_low_switch
  .text.get_high_switch
-                0x00000000080044d0       0x18 Output/CH_HomeRo CH_HomeRo/Obj/app.o
-                0x00000000080044d0                get_high_switch
+                0x0000000008004624       0x18 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x0000000008004624                get_high_switch
  .text.init_device_from_flash
-                0x00000000080044e8      0x160 Output/CH_HomeRo CH_HomeRo/Obj/app.o
-                0x00000000080044e8                init_device_from_flash
+                0x000000000800463c      0x160 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x000000000800463c                init_device_from_flash
  .text.registe_device
-                0x0000000008004648       0x3c Output/CH_HomeRo CH_HomeRo/Obj/app.o
-                0x0000000008004648                registe_device
+                0x000000000800479c       0x3c Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x000000000800479c                registe_device
  .text.HAL_TIM_PeriodElapsedCallback
-                0x0000000008004684      0x1a8 Output/CH_HomeRo CH_HomeRo/Obj/app.o
-                0x0000000008004684                HAL_TIM_PeriodElapsedCallback
+                0x00000000080047d8      0x1dc Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x00000000080047d8                HAL_TIM_PeriodElapsedCallback
+ .text.HAL_TIM_IC_CaptureCallback
+                0x00000000080049b4       0x20 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x00000000080049b4                HAL_TIM_IC_CaptureCallback
  .text.bc95_init
-                0x000000000800482c      0x168 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x000000000800482c                bc95_init
+                0x00000000080049d4      0x168 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x00000000080049d4                bc95_init
  .text.bc95_send_command
-                0x0000000008004994       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004994                bc95_send_command
+                0x0000000008004b3c       0xc4 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004b3c                bc95_send_command
  .text.bc95_open_recv
-                0x0000000008004a58       0x28 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004a58                bc95_open_recv
+                0x0000000008004c00       0x28 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004c00                bc95_open_recv
  .text.bc95_check_ack
-                0x0000000008004a80       0x34 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004a80                bc95_check_ack
+                0x0000000008004c28       0x34 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004c28                bc95_check_ack
  .text.bc95_get_imsi
-                0x0000000008004ab4       0x78 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004ab4                bc95_get_imsi
+                0x0000000008004c5c       0x78 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004c5c                bc95_get_imsi
  .text.bc95_get_imei
-                0x0000000008004b2c       0x78 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004b2c                bc95_get_imei
+                0x0000000008004cd4       0x78 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004cd4                bc95_get_imei
  .text.bc95_get_iccid
-                0x0000000008004ba4       0x78 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004ba4                bc95_get_iccid
+                0x0000000008004d4c       0x78 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004d4c                bc95_get_iccid
  .text.bc95_get_profile_status
-                0x0000000008004c1c       0x54 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004c1c                bc95_get_profile_status
+                0x0000000008004dc4       0x54 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004dc4                bc95_get_profile_status
  .text.bc95_get_csq
-                0x0000000008004c70       0xac Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004c70                bc95_get_csq
+                0x0000000008004e18       0xac Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004e18                bc95_get_csq
  .text.bc95_set_server_ip
-                0x0000000008004d1c       0xac Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004d1c                bc95_set_server_ip
+                0x0000000008004ec4       0xac Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004ec4                bc95_set_server_ip
  .text.bc95_reboot
-                0x0000000008004dc8       0x20 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004dc8                bc95_reboot
+                0x0000000008004f70       0x28 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004f70                bc95_reboot
  .text.bc95_send_coap
-                0x0000000008004de8      0x1e8 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004de8                bc95_send_coap
+                0x0000000008004f98      0x1e8 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008004f98                bc95_send_coap
  .text.bc95_read_coap
-                0x0000000008004fd0       0x90 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008004fd0                bc95_read_coap
+                0x0000000008005180       0x90 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008005180                bc95_read_coap
  .text.bc95_recv_idle_callback
-                0x0000000008005060       0x8c Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x0000000008005060                bc95_recv_idle_callback
+                0x0000000008005210       0x8c Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000008005210                bc95_recv_idle_callback
  .text.ByteToHexStr
-                0x00000000080050ec       0xdc Output/CH_HomeRo CH_HomeRo/Obj/tools.o
-                0x00000000080050ec                ByteToHexStr
+                0x000000000800529c       0xdc Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+                0x000000000800529c                ByteToHexStr
  .text.flash_write
-                0x00000000080051c8       0x70 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
-                0x00000000080051c8                flash_write
+                0x0000000008005378       0x70 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+                0x0000000008005378                flash_write
  .text.flash_read
-                0x0000000008005238       0x18 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
-                0x0000000008005238                flash_read
+                0x00000000080053e8       0x18 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+                0x00000000080053e8                flash_read
  .text.processing_server_command
-                0x0000000008005250      0x258 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
-                0x0000000008005250                processing_server_command
+                0x0000000008005400      0x258 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+                0x0000000008005400                processing_server_command
  .text.flash_device_status
-                0x00000000080054a8       0xc0 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
-                0x00000000080054a8                flash_device_status
+                0x0000000008005658       0xc0 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+                0x0000000008005658                flash_device_status
  .text.libc.__RAL_ascii_isctype
-                0x0000000008005568       0x1c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005718       0x1c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_toupper
-                0x0000000008005584        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005734        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_tolower
-                0x0000000008005590        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005740        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_iswctype
-                0x000000000800559c       0x1c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x000000000800574c       0x1c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_towupper
-                0x00000000080055b8        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005768        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_towlower
-                0x00000000080055c4        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005774        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .text.libc.__RAL_ascii_wctomb
-                0x00000000080055d0        0xe /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080055d0                __RAL_ascii_wctomb
+                0x0000000008005780        0xe /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005780                __RAL_ascii_wctomb
  .text.libc.__RAL_ascii_mbtowc
-                0x00000000080055de       0x24 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080055de                __RAL_ascii_mbtowc
+                0x000000000800578e       0x24 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x000000000800578e                __RAL_ascii_mbtowc
  .text.libc.__getc
-                0x0000000008005602       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005602                __getc
- *fill*         0x0000000008005622        0x2 
+                0x00000000080057b2       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080057b2                __getc
+ *fill*         0x00000000080057d2        0x2 
  .text.libc.__RAL_pow10
-                0x0000000008005624       0x60 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005624                __RAL_pow10
+                0x00000000080057d4       0x60 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080057d4                __RAL_pow10
  .text.libc.__putc
-                0x0000000008005684       0x34 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005684                __putc
+                0x0000000008005834       0x34 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005834                __putc
  .text.libc.__RAL_print_padding
-                0x00000000080056b8       0x1c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080056b8                __RAL_print_padding
+                0x0000000008005868       0x1c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005868                __RAL_print_padding
  .text.libc.__RAL_pre_padding
-                0x00000000080056d4       0x1c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080056d4                __RAL_pre_padding
+                0x0000000008005884       0x1c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005884                __RAL_pre_padding
  .text.libc.abs
-                0x00000000080056f0        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080056f0                abs
+                0x00000000080058a0        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080058a0                abs
  .text.libc.__RAL_isctype
-                0x00000000080056f8       0x14 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080056f8                __RAL_isctype
+                0x00000000080058a8       0x14 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080058a8                __RAL_isctype
  .text.libc.isupper
-                0x000000000800570c        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x000000000800570c                isupper
+                0x00000000080058bc        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080058bc                isupper
  .text.libc.islower
-                0x0000000008005716        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005716                islower
+                0x00000000080058c6        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080058c6                islower
  .text.libc.isdigit
-                0x0000000008005720        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005720                isdigit
+                0x00000000080058d0        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080058d0                isdigit
  .text.libc.__digit
-                0x000000000800572a       0x3c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x000000000800572a                __digit
+                0x00000000080058da       0x3c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080058da                __digit
  .text.libc.isspace
-                0x0000000008005766        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005766                isspace
+                0x0000000008005916        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005916                isspace
  .text.libc.__aeabi_errno_addr
-                0x0000000008005770       0x14 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005770                __aeabi_errno_addr
+                0x0000000008005920       0x14 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005920                __aeabi_errno_addr
  .text.libc.__strtoul
-                0x0000000008005784       0xdc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005784                __strtoul
+                0x0000000008005934       0xdc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005934                __strtoul
  .text.libc.memmove
-                0x0000000008005860       0x38 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005860                memmove
-                0x0000000008005860                __aeabi_memmove8
-                0x0000000008005860                __aeabi_memmove
-                0x0000000008005860                __aeabi_memmove4
+                0x0000000008005a10       0x38 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005a10                memmove
+                0x0000000008005a10                __aeabi_memmove8
+                0x0000000008005a10                __aeabi_memmove
+                0x0000000008005a10                __aeabi_memmove4
+ .text.libc.printf
+                0x0000000008005a48       0x40 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005a48                printf
  .text.libc.sprintf
-                0x0000000008005898       0x2a /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005898                sprintf
+                0x0000000008005a88       0x2a /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005a88                sprintf
  .text.libc.sscanf
-                0x00000000080058c2       0x26 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080058c2                sscanf
+                0x0000000008005ab2       0x26 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005ab2                sscanf
  .text.libc.strcat
-                0x00000000080058e8       0x86 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080058e8                strcat
+                0x0000000008005ad8       0x86 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005ad8                strcat
  .text.libc.strchr
-                0x000000000800596e       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x000000000800596e                strchr
+                0x0000000008005b5e       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005b5e                strchr
  .text.libc.strnlen
-                0x000000000800598e       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x000000000800598e                strnlen
+                0x0000000008005b7e       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005b7e                strnlen
  .text.libc.strstr
-                0x00000000080059ae       0x40 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080059ae                strstr
+                0x0000000008005b9e       0x40 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005b9e                strstr
  .text.libc.strtol
-                0x00000000080059ee       0xac /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080059ee                strtol
+                0x0000000008005bde       0xac /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005bde                strtol
  .text.libc.atoi
-                0x0000000008005a9a       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005a9a                atoi
- *fill*         0x0000000008005aba        0x2 
+                0x0000000008005c8a       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005c8a                atoi
+ *fill*         0x0000000008005caa        0x2 
  .text.libc.wctomb_l
-                0x0000000008005abc       0x30 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005abc                wctomb_l
+                0x0000000008005cac       0x30 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005cac                wctomb_l
  .text.libc.wctomb
-                0x0000000008005aec       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005aec                wctomb
+                0x0000000008005cdc       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005cdc                wctomb
  .text.libc.__RAL_init_mbstate
-                0x0000000008005afc        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008005afc                __RAL_init_mbstate
+                0x0000000008005cec        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008005cec                __RAL_init_mbstate
  .text.libc.memset
-                0x0000000008005b04       0x68 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2_asm.o)
-                0x0000000008005b04                memset
+                0x0000000008005cf4       0x68 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2_asm.o)
+                0x0000000008005cf4                memset
  .text.libc.strlen
-                0x0000000008005b6c       0x60 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2_asm.o)
-                0x0000000008005b6c                strlen
+                0x0000000008005d5c       0x60 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2_asm.o)
+                0x0000000008005d5c                strlen
  .text.libc.__int64_udivmod
-                0x0000000008005bcc       0xd0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
-                0x0000000008005bcc                __int64_udivmod
-                0x0000000008005bcc                __aeabi_uldivmod
-                0x0000000008005bcc                __int64_udiv
-                0x0000000008005bcc                __udivdi3
+                0x0000000008005dbc       0xd0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
+                0x0000000008005dbc                __int64_udivmod
+                0x0000000008005dbc                __aeabi_uldivmod
+                0x0000000008005dbc                __int64_udiv
+                0x0000000008005dbc                __udivdi3
+ .text.libdebugio.debug_putchar
+                0x0000000008005e8c       0x18 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
+                0x0000000008005e8c                debug_putchar
  .text.libc.__RAL_compute_wide_metrics
-                0x0000000008005c9c       0x34 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
-                0x0000000008005c9c                __RAL_compute_wide_metrics
+                0x0000000008005ea4       0x34 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
+                0x0000000008005ea4                __RAL_compute_wide_metrics
  .text.libc.__RAL_print_wide_string
-                0x0000000008005cd0       0x48 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
-                0x0000000008005cd0                __RAL_print_wide_string
+                0x0000000008005ed8       0x48 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
+                0x0000000008005ed8                __RAL_print_wide_string
  .text.libc.__vfprintf_float_long_wchar
-                0x0000000008005d18     0x1158 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
-                0x0000000008005d18                __vfprintf_float_long_wchar
+                0x0000000008005f20     0x1158 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
+                0x0000000008005f20                __vfprintf_float_long_wchar
  .text.libc.__ungetc
-                0x0000000008006e70       0x1e /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
+                0x0000000008007078       0x1e /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
  .text.libc.rd_string
-                0x0000000008006e8e       0xa8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
+                0x0000000008007096       0xa8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
  .text.libc.rd_string_map
-                0x0000000008006f36       0x9c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
+                0x000000000800713e       0x9c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
  .text.libc.rd_int_long
-                0x0000000008006fd2      0x180 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
- *fill*         0x0000000008007152        0x2 
+                0x00000000080071da      0x180 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
+ *fill*         0x000000000800735a        0x2 
  .text.libc.rd_real
-                0x0000000008007154      0x264 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
+                0x000000000800735c      0x264 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
  .text.libc.__vfscanf_float_long_cc
-                0x00000000080073b8      0x396 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
-                0x00000000080073b8                __vfscanf_float_long_cc
- *fill*         0x000000000800774e        0x2 
+                0x00000000080075c0      0x396 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
+                0x00000000080075c0                __vfscanf_float_long_cc
+ *fill*         0x0000000008007956        0x2 
+ .text.libdebugio.__do_debug_operation
+                0x0000000008007958       0x30 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+                0x0000000008007958                __do_debug_operation
  .text.libc.__int32_to_float64
-                0x0000000008007750       0x30 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007750                __floatsidf
-                0x0000000008007750                __aeabi_i2d
-                0x0000000008007750                __int32_to_float64
+                0x0000000008007988       0x30 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008007988                __floatsidf
+                0x0000000008007988                __aeabi_i2d
+                0x0000000008007988                __int32_to_float64
  .text.libc.__int64_to_float64
-                0x0000000008007780       0xa0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007780                __floatdidf
-                0x0000000008007780                __int64_to_float64
-                0x0000000008007780                __aeabi_l2d
-                0x00000000080077a4                __RAL_aeabi_l2d_common
+                0x00000000080079b8       0xa0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080079b8                __floatdidf
+                0x00000000080079b8                __int64_to_float64
+                0x00000000080079b8                __aeabi_l2d
+                0x00000000080079dc                __RAL_aeabi_l2d_common
  .text.libc.__uint64_to_float64
-                0x0000000008007820       0x14 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007820                __uint64_to_float64
-                0x0000000008007820                __aeabi_ul2d
-                0x0000000008007820                __floatundidf
+                0x0000000008007a58       0x14 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008007a58                __uint64_to_float64
+                0x0000000008007a58                __aeabi_ul2d
+                0x0000000008007a58                __floatundidf
  .text.libc.__float64_to_uint64
-                0x0000000008007834       0x48 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007834                __aeabi_d2ulz
-                0x0000000008007834                __fixunsdfdi
-                0x0000000008007834                __float64_to_uint64
+                0x0000000008007a6c       0x48 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008007a6c                __aeabi_d2ulz
+                0x0000000008007a6c                __fixunsdfdi
+                0x0000000008007a6c                __float64_to_uint64
  .text.libc.__float64_to_float32
-                0x000000000800787c       0x70 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x000000000800787c                __aeabi_d2f
-                0x000000000800787c                __truncdfsf2
-                0x000000000800787c                __float64_to_float32
+                0x0000000008007ab4       0x70 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008007ab4                __aeabi_d2f
+                0x0000000008007ab4                __truncdfsf2
+                0x0000000008007ab4                __float64_to_float32
  .text.libc.__float64_add
-                0x00000000080078ec      0x294 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x00000000080078ec                __aeabi_drsub
-                0x00000000080078f4                __float64_sub
-                0x00000000080078f4                __aeabi_dsub
-                0x00000000080078f4                __subdf3
-                0x00000000080078f8                __adddf3
-                0x00000000080078f8                __float64_add
-                0x00000000080078f8                __aeabi_dadd
+                0x0000000008007b24      0x294 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008007b24                __aeabi_drsub
+                0x0000000008007b2c                __float64_sub
+                0x0000000008007b2c                __aeabi_dsub
+                0x0000000008007b2c                __subdf3
+                0x0000000008007b30                __adddf3
+                0x0000000008007b30                __float64_add
+                0x0000000008007b30                __aeabi_dadd
  .text.libc.__float64_mul
-                0x0000000008007b80      0x16c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007b80                __aeabi_dmul
-                0x0000000008007b80                __float64_mul
-                0x0000000008007b80                __muldf3
+                0x0000000008007db8      0x16c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008007db8                __aeabi_dmul
+                0x0000000008007db8                __float64_mul
+                0x0000000008007db8                __muldf3
  .text.libc.__float64_div
-                0x0000000008007cec      0x214 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007cec                __aeabi_ddiv
-                0x0000000008007cec                __divdf3
-                0x0000000008007cec                __float64_div
+                0x0000000008007f24      0x214 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008007f24                __aeabi_ddiv
+                0x0000000008007f24                __divdf3
+                0x0000000008007f24                __float64_div
  .text.libc.__float64_cmpeq
-                0x0000000008007f00       0x34 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007f00                __aeabi_dcmpeq
+                0x0000000008008138       0x34 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008008138                __aeabi_dcmpeq
  .text.libc.__float64_cmple
-                0x0000000008007f34       0x3c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007f34                __aeabi_dcmple
+                0x000000000800816c       0x3c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800816c                __aeabi_dcmple
  .text.libc.__float64_cmpge
-                0x0000000008007f70       0x3c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007f70                __aeabi_dcmpge
+                0x00000000080081a8       0x3c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080081a8                __aeabi_dcmpge
  .text.libc.__float64_cmplt
-                0x0000000008007fac       0x38 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007fac                __aeabi_dcmplt
+                0x00000000080081e4       0x38 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x00000000080081e4                __aeabi_dcmplt
  .text.libc.__float64_cmpgt
-                0x0000000008007fe4       0x38 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008007fe4                __aeabi_dcmpgt
+                0x000000000800821c       0x38 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800821c                __aeabi_dcmpgt
  .text.libc.__float64_signbit
-                0x000000000800801c        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x000000000800801c                __float64_signbit
+                0x0000000008008254        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008008254                __float64_signbit
  .text.libc.__float32_isinf
-                0x0000000008008024       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008008024                __float32_isinf
+                0x000000000800825c       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800825c                __float32_isinf
  .text.libc.__float64_isinf
-                0x0000000008008034       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008008034                __float64_isinf
+                0x000000000800826c       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800826c                __float64_isinf
  .text.libc.__float64_isnan
-                0x0000000008008044       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008008044                __float64_isnan
+                0x000000000800827c       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000800827c                __float64_isnan
  .text.libc.frexp
-                0x0000000008008054       0x48 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
-                0x0000000008008054                frexp(double, int*)
-                0x0000000008008054                frexp
+                0x000000000800828c       0x48 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x000000000800828c                frexp(double, int*)
+                0x000000000800828c                frexp
  .text.libc.ldexp
-                0x000000000800809c       0x6c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
-                0x000000000800809c                ldexp(double, int)
-                0x000000000800809c                ldexp
+                0x00000000080082d4       0x6c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x00000000080082d4                ldexp(double, int)
+                0x00000000080082d4                ldexp
  .text.libc.modf
-                0x0000000008008108       0x90 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
-                0x0000000008008108                modf
-                0x0000000008008108                modf(double, double*)
+                0x0000000008008340       0x90 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x0000000008008340                modf
+                0x0000000008008340                modf(double, double*)
  .text.libc.floor
-                0x0000000008008198       0x9c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
-                0x0000000008008198                floor
-                0x0000000008008198                floor(double)
+                0x00000000080083d0       0x9c /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x00000000080083d0                floor
+                0x00000000080083d0                floor(double)
  .text.libc.fmod
-                0x0000000008008234      0x164 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
-                0x0000000008008234                fmod(double, double)
-                0x0000000008008234                fmod
+                0x000000000800846c      0x164 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x000000000800846c                fmod(double, double)
+                0x000000000800846c                fmod
  .text.libc.fabs
-                0x0000000008008398        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
-                0x0000000008008398                fabs
-                0x0000000008008398                fabs(double)
-                0x00000000080083a0                __text_end__ = (__text_start__ + SIZEOF (.text))
-                0x000000000000806c                __text_size__ = SIZEOF (.text)
-                0x00000000080083a0                __text_load_end__ = __text_end__
+                0x00000000080085d0        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
+                0x00000000080085d0                fabs
+                0x00000000080085d0                fabs(double)
+                0x00000000080085d8                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x00000000000082a4                __text_size__ = SIZEOF (.text)
+                0x00000000080085d8                __text_load_end__ = __text_end__
 
 .vfp11_veneer   0x0000000100000000        0x0
  .vfp11_veneer  0x0000000100000000        0x0 linker stubs
@@ -3576,164 +3581,163 @@ Linker script and memory map
 .iplt           0x0000000100000000        0x0
  .iplt          0x0000000100000000        0x0 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
                 0x0000000000000001                . = ASSERT (((__text_start__ == __text_end__) || ((__text_end__ >= __FLASH_segment_start__) && (__text_end__ <= __FLASH_segment_end__))), error: .text is too large to fit in FLASH memory segment)
-                0x00000000080083a0                __dtors_load_start__ = ALIGN (__text_end__, 0x4)
+                0x00000000080085d8                __dtors_load_start__ = ALIGN (__text_end__, 0x4)
 
-.dtors          0x00000000080083a0        0x0
-                0x00000000080083a0                __dtors_start__ = .
+.dtors          0x00000000080085d8        0x0
+                0x00000000080085d8                __dtors_start__ = .
  *(SORT(.dtors.*))
  *(.dtors)
  *(.fini_array)
  *(SORT(.fini_array.*))
-                0x00000000080083a0                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x00000000080085d8                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
                 0x0000000000000000                __dtors_size__ = SIZEOF (.dtors)
-                0x00000000080083a0                __dtors_load_end__ = __dtors_end__
+                0x00000000080085d8                __dtors_load_end__ = __dtors_end__
                 0x0000000000000001                . = ASSERT (((__dtors_start__ == __dtors_end__) || ((__dtors_end__ >= __FLASH_segment_start__) && (__dtors_end__ <= __FLASH_segment_end__))), error: .dtors is too large to fit in FLASH memory segment)
-                0x00000000080083a0                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
+                0x00000000080085d8                __ctors_load_start__ = ALIGN (__dtors_end__, 0x4)
 
-.ctors          0x00000000080083a0        0x0
-                0x00000000080083a0                __ctors_start__ = .
+.ctors          0x00000000080085d8        0x0
+                0x00000000080085d8                __ctors_start__ = .
  *(SORT(.ctors.*))
  *(.ctors)
  *(.init_array)
  *(SORT(.init_array.*))
-                0x00000000080083a0                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x00000000080085d8                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
                 0x0000000000000000                __ctors_size__ = SIZEOF (.ctors)
-                0x00000000080083a0                __ctors_load_end__ = __ctors_end__
+                0x00000000080085d8                __ctors_load_end__ = __ctors_end__
                 0x0000000000000001                . = ASSERT (((__ctors_start__ == __ctors_end__) || ((__ctors_end__ >= __FLASH_segment_start__) && (__ctors_end__ <= __FLASH_segment_end__))), error: .ctors is too large to fit in FLASH memory segment)
-                0x00000000080083a0                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
+                0x00000000080085d8                __rodata_load_start__ = ALIGN (__ctors_end__, 0x4)
 
-.rodata         0x00000000080083a0      0x5a8
-                0x00000000080083a0                __rodata_start__ = .
+.rodata         0x00000000080085d8      0x5b0
+                0x00000000080085d8                __rodata_start__ = .
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x00000000080083a0       0x2d Output/CH_HomeRo CH_HomeRo/Obj/main.o
- *fill*         0x00000000080083cd        0x3 
- .rodata        0x00000000080083d0       0x2c Output/CH_HomeRo CH_HomeRo/Obj/spi.o
- .rodata        0x00000000080083fc       0x2e Output/CH_HomeRo CH_HomeRo/Obj/usart.o
- *fill*         0x000000000800842a        0x2 
- .rodata        0x000000000800842c       0x2c Output/CH_HomeRo CH_HomeRo/Obj/adc.o
- .rodata        0x0000000008008458       0x2c Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+ .rodata        0x00000000080085d8       0x41 Output/CH_HomeRo CH_HomeRo/Obj/main.o
+ *fill*         0x0000000008008619        0x3 
+ .rodata        0x000000000800861c       0x2c Output/CH_HomeRo CH_HomeRo/Obj/spi.o
+ .rodata        0x0000000008008648       0x2e Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+ *fill*         0x0000000008008676        0x2 
+ .rodata        0x0000000008008678       0x2c Output/CH_HomeRo CH_HomeRo/Obj/adc.o
+ .rodata        0x00000000080086a4       0x2c Output/CH_HomeRo CH_HomeRo/Obj/tim.o
  .rodata.AHBPrescTable
-                0x0000000008008484       0x10 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
-                0x0000000008008484                AHBPrescTable
+                0x00000000080086d0       0x10 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
+                0x00000000080086d0                AHBPrescTable
  .rodata.APBPrescTable
-                0x0000000008008494        0x8 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
-                0x0000000008008494                APBPrescTable
- .rodata        0x000000000800849c       0x12 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
- *fill*         0x00000000080084ae        0x2 
- .rodata        0x00000000080084b0       0x12 Output/CH_HomeRo CH_HomeRo/Obj/app.o
- *fill*         0x00000000080084c2        0x2 
- .rodata        0x00000000080084c4       0xe0 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
- .rodata        0x00000000080085a4       0x17 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
- *fill*         0x00000000080085bb        0x1 
+                0x00000000080086e0        0x8 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
+                0x00000000080086e0                APBPrescTable
+ .rodata        0x00000000080086e8       0x12 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+ *fill*         0x00000000080086fa        0x2 
+ .rodata        0x00000000080086fc       0x12 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+ *fill*         0x000000000800870e        0x2 
+ .rodata        0x0000000008008710       0xd8 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+ .rodata        0x00000000080087e8       0x17 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+ *fill*         0x00000000080087ff        0x1 
  .rodata.libc.__RAL_ascii_ctype_map
-                0x00000000080085bc       0x80 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080085bc                __RAL_ascii_ctype_map
+                0x0000000008008800       0x80 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008800                __RAL_ascii_ctype_map
  .rodata.libc.__RAL_ascii_ctype_mask
-                0x000000000800863c        0xd /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
- *fill*         0x0000000008008649        0x3 
+                0x0000000008008880        0xd /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+ *fill*         0x000000000800888d        0x3 
  .rodata.libc.__RAL_c_locale
-                0x000000000800864c        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x000000000800864c                __RAL_c_locale
+                0x0000000008008890        0xc /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008890                __RAL_c_locale
  .rodata.libc.__RAL_c_locale_abbrev_day_names
-                0x0000000008008658       0x1d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008008658                __RAL_c_locale_abbrev_day_names
- *fill*         0x0000000008008675        0x3 
+                0x000000000800889c       0x1d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x000000000800889c                __RAL_c_locale_abbrev_day_names
+ *fill*         0x00000000080088b9        0x3 
  .rodata.libc.__RAL_c_locale_abbrev_month_names
-                0x0000000008008678       0x31 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008008678                __RAL_c_locale_abbrev_month_names
- *fill*         0x00000000080086a9        0x3 
+                0x00000000080088bc       0x31 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080088bc                __RAL_c_locale_abbrev_month_names
+ *fill*         0x00000000080088ed        0x3 
  .rodata.libc.__RAL_c_locale_am_pm_indicator
-                0x00000000080086ac        0x7 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080086ac                __RAL_c_locale_am_pm_indicator
- *fill*         0x00000000080086b3        0x1 
+                0x00000000080088f0        0x7 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080088f0                __RAL_c_locale_am_pm_indicator
+ *fill*         0x00000000080088f7        0x1 
  .rodata.libc.__RAL_c_locale_data
-                0x00000000080086b4       0x58 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080086b4                __RAL_c_locale_data
+                0x00000000080088f8       0x58 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080088f8                __RAL_c_locale_data
  .rodata.libc.__RAL_c_locale_date_format
-                0x000000000800870c        0x9 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x000000000800870c                __RAL_c_locale_date_format
- *fill*         0x0000000008008715        0x3 
+                0x0000000008008950        0x9 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008950                __RAL_c_locale_date_format
+ *fill*         0x0000000008008959        0x3 
  .rodata.libc.__RAL_c_locale_date_time_format
-                0x0000000008008718        0xf /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008008718                __RAL_c_locale_date_time_format
- *fill*         0x0000000008008727        0x1 
+                0x000000000800895c        0xf /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x000000000800895c                __RAL_c_locale_date_time_format
+ *fill*         0x000000000800896b        0x1 
  .rodata.libc.__RAL_c_locale_day_names
-                0x0000000008008728       0x3a /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008008728                __RAL_c_locale_day_names
- *fill*         0x0000000008008762        0x2 
+                0x000000000800896c       0x3a /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x000000000800896c                __RAL_c_locale_day_names
+ *fill*         0x00000000080089a6        0x2 
  .rodata.libc.__RAL_c_locale_month_names
-                0x0000000008008764       0x57 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008008764                __RAL_c_locale_month_names
- *fill*         0x00000000080087bb        0x1 
+                0x00000000080089a8       0x57 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000080089a8                __RAL_c_locale_month_names
+ *fill*         0x00000000080089ff        0x1 
  .rodata.libc.__RAL_c_locale_time_format
-                0x00000000080087bc        0x9 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080087bc                __RAL_c_locale_time_format
- *fill*         0x00000000080087c5        0x3 
+                0x0000000008008a00        0x9 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008a00                __RAL_c_locale_time_format
+ *fill*         0x0000000008008a09        0x3 
  .rodata.libc.__RAL_codeset_ascii
-                0x00000000080087c8       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080087c8                __RAL_codeset_ascii
+                0x0000000008008a0c       0x20 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008a0c                __RAL_codeset_ascii
  .rodata.libc.__RAL_data_empty_string
-                0x00000000080087e8        0x1 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080087e8                __RAL_data_empty_string
- *fill*         0x00000000080087e9        0x3 
+                0x0000000008008a2c        0x1 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008a2c                __RAL_data_empty_string
+ *fill*         0x0000000008008a2d        0x3 
  .rodata.libc.__RAL_data_utf8_period
-                0x00000000080087ec        0x2 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080087ec                __RAL_data_utf8_period
- *fill*         0x00000000080087ee        0x2 
+                0x0000000008008a30        0x2 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008a30                __RAL_data_utf8_period
+ *fill*         0x0000000008008a32        0x2 
  .rodata.libc.__RAL_find_locale.str1.4
-                0x00000000080087f0        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
- *fill*         0x00000000080087fa        0x2 
+                0x0000000008008a34        0xa /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+ *fill*         0x0000000008008a3e        0x2 
  .rodata.libc.__RAL_hex_lc
-                0x00000000080087fc       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000080087fc                __RAL_hex_lc
+                0x0000000008008a40       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008a40                __RAL_hex_lc
  .rodata.libc.__RAL_hex_uc
-                0x000000000800880c       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x000000000800880c                __RAL_hex_uc
+                0x0000000008008a50       0x10 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008a50                __RAL_hex_uc
  .rodata.libc.__aeabi_EDOM
-                0x000000000800881c        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x000000000800881c                __aeabi_EDOM
+                0x0000000008008a60        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008a60                __aeabi_EDOM
  .rodata.libc.__aeabi_ERANGE
-                0x0000000008008820        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000008008820                __aeabi_ERANGE
- *fill*         0x0000000008008824        0x4 
+                0x0000000008008a64        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008a64                __aeabi_ERANGE
  .rodata.libc.power
-                0x0000000008008828       0x48 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000008008a68       0x48 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .rodata.libc.__vfprintf_float_long.str1.4
-                0x0000000008008870       0x28 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
+                0x0000000008008ab0       0x28 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
  .rodata.libc.__vfprintf_int.str1.4
-                0x0000000008008898        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
+                0x0000000008008ad8        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
                                           0x7 (size before relaxing)
  .rodata.libc.ipow10
-                0x00000000080088a0       0xa0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
+                0x0000000008008ae0       0xa0 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
  .rodata.libc.__float64_nan
-                0x0000000008008940        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
-                0x0000000008008940                __float64_nan
-                0x0000000008008948                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
-                0x00000000000005a8                __rodata_size__ = SIZEOF (.rodata)
-                0x0000000008008948                __rodata_load_end__ = __rodata_end__
+                0x0000000008008b80        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x0000000008008b80                __float64_nan
+                0x0000000008008b88                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x00000000000005b0                __rodata_size__ = SIZEOF (.rodata)
+                0x0000000008008b88                __rodata_load_end__ = __rodata_end__
 
 .rel.dyn        0x0000000008000000        0x0
  .rel.iplt      0x0000000008000000        0x0 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
                 0x0000000000000001                . = ASSERT (((__rodata_start__ == __rodata_end__) || ((__rodata_end__ >= __FLASH_segment_start__) && (__rodata_end__ <= __FLASH_segment_end__))), error: .rodata is too large to fit in FLASH memory segment)
-                0x0000000008008948                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
+                0x0000000008008b88                __ARM.exidx_load_start__ = ALIGN (__rodata_end__, 0x4)
 
-.ARM.exidx      0x0000000008008948        0x0
-                0x0000000008008948                __ARM.exidx_start__ = .
-                0x0000000008008948                __exidx_start = __ARM.exidx_start__
+.ARM.exidx      0x0000000008008b88        0x0
+                0x0000000008008b88                __ARM.exidx_start__ = .
+                0x0000000008008b88                __exidx_start = __ARM.exidx_start__
  *(.ARM.exidx .ARM.exidx.*)
-                0x0000000008008948                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
+                0x0000000008008b88                __ARM.exidx_end__ = (__ARM.exidx_start__ + SIZEOF (.ARM.exidx))
                 0x0000000000000000                __ARM.exidx_size__ = SIZEOF (.ARM.exidx)
-                0x0000000008008948                __exidx_end = __ARM.exidx_end__
-                0x0000000008008948                __ARM.exidx_load_end__ = __ARM.exidx_end__
+                0x0000000008008b88                __exidx_end = __ARM.exidx_end__
+                0x0000000008008b88                __ARM.exidx_load_end__ = __ARM.exidx_end__
                 0x0000000000000001                . = ASSERT (((__ARM.exidx_start__ == __ARM.exidx_end__) || ((__ARM.exidx_end__ >= __FLASH_segment_start__) && (__ARM.exidx_end__ <= __FLASH_segment_end__))), error: .ARM.exidx is too large to fit in FLASH memory segment)
-                0x0000000008008948                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
+                0x0000000008008b88                __fast_load_start__ = ALIGN (__ARM.exidx_end__, 0x4)
 
-.fast           0x0000000020000000        0x0 load address 0x0000000008008948
+.fast           0x0000000020000000        0x0 load address 0x0000000008008b88
                 0x0000000020000000                __fast_start__ = .
  *(.fast .fast.*)
                 0x0000000020000000                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
                 0x0000000000000000                __fast_size__ = SIZEOF (.fast)
-                0x0000000008008948                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x0000000008008b88                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
                 0x0000000000000001                . = ASSERT (((__fast_load_start__ == __fast_load_end__) || ((__fast_load_end__ >= __FLASH_segment_start__) && (__fast_load_end__ <= __FLASH_segment_end__))), error: .fast is too large to fit in FLASH memory segment)
 
 .fast_run       0x0000000020000000        0x0
@@ -3743,9 +3747,9 @@ Linker script and memory map
                 0x0000000000000000                __fast_run_size__ = SIZEOF (.fast_run)
                 0x0000000020000000                __fast_run_load_end__ = __fast_run_end__
                 0x0000000000000001                . = ASSERT (((__fast_run_start__ == __fast_run_end__) || ((__fast_run_end__ >= __RAM_segment_start__) && (__fast_run_end__ <= __RAM_segment_end__))), error: .fast_run is too large to fit in RAM memory segment)
-                0x0000000008008948                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
+                0x0000000008008b88                __data_load_start__ = ALIGN ((__fast_load_start__ + SIZEOF (.fast)), 0x4)
 
-.data           0x0000000020000000      0x10c load address 0x0000000008008948
+.data           0x0000000020000000      0x100 load address 0x0000000008008b88
                 0x0000000020000000                __data_start__ = .
  *(.data .data.* .gnu.linkonce.d.*)
  .data.SystemCoreClock
@@ -3803,105 +3807,102 @@ Linker script and memory map
  .data.cmd_set_fully_funtion
                 0x00000000200000b0        0xc Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
                 0x00000000200000b0                cmd_set_fully_funtion
- .data.cmd_reboot
-                0x00000000200000bc        0x9 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x00000000200000bc                cmd_reboot
- *fill*         0x00000000200000c5        0x3 
- .data.cmd_ok   0x00000000200000c8        0x3 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x00000000200000c8                cmd_ok
- *fill*         0x00000000200000cb        0x1 
+ .data.cmd_ok   0x00000000200000bc        0x3 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x00000000200000bc                cmd_ok
+ *fill*         0x00000000200000bf        0x1 
  .data.cmd_coap_have_recv
-                0x00000000200000cc        0x6 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x00000000200000cc                cmd_coap_have_recv
- *fill*         0x00000000200000d2        0x2 
+                0x00000000200000c0        0x6 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x00000000200000c0                cmd_coap_have_recv
+ *fill*         0x00000000200000c6        0x2 
  .data.server_ip
-                0x00000000200000d4       0x15 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x00000000200000d4                server_ip
+                0x00000000200000c8       0x15 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x00000000200000c8                server_ip
+ *fill*         0x00000000200000dd        0x3 
+ .data.header   0x00000000200000e0        0x9 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x00000000200000e0                header
  *fill*         0x00000000200000e9        0x3 
- .data.header   0x00000000200000ec        0x9 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                0x00000000200000ec                header
- *fill*         0x00000000200000f5        0x3 
  .data.libc.__RAL_global_locale
-                0x00000000200000f8       0x14 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x00000000200000f8                __RAL_global_locale
-                0x000000002000010c                __data_end__ = (__data_start__ + SIZEOF (.data))
-                0x000000000000010c                __data_size__ = SIZEOF (.data)
-                0x0000000008008a54                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x00000000200000ec       0x14 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x00000000200000ec                __RAL_global_locale
+                0x0000000020000100                __data_end__ = (__data_start__ + SIZEOF (.data))
+                0x0000000000000100                __data_size__ = SIZEOF (.data)
+                0x0000000008008c88                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
 
 .igot.plt       0x0000000100000000        0x0
  .igot.plt      0x0000000100000000        0x0 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
                 0x0000000000000001                . = ASSERT (((__data_load_start__ == __data_load_end__) || ((__data_load_end__ >= __FLASH_segment_start__) && (__data_load_end__ <= __FLASH_segment_end__))), error: .data is too large to fit in FLASH memory segment)
 
-.data_run       0x0000000020000000      0x10c load address 0x0000000008008948
+.data_run       0x0000000020000000      0x100 load address 0x0000000008008b88
                 0x0000000020000000                __data_run_start__ = .
-                0x000000002000010c                . = MAX ((__data_run_start__ + SIZEOF (.data)), .)
- *fill*         0x0000000020000000      0x10c 
-                0x000000002000010c                __data_run_end__ = (__data_run_start__ + SIZEOF (.data_run))
-                0x000000000000010c                __data_run_size__ = SIZEOF (.data_run)
-                0x000000002000010c                __data_run_load_end__ = __data_run_end__
+                0x0000000020000100                . = MAX ((__data_run_start__ + SIZEOF (.data)), .)
+ *fill*         0x0000000020000000      0x100 
+                0x0000000020000100                __data_run_end__ = (__data_run_start__ + SIZEOF (.data_run))
+                0x0000000000000100                __data_run_size__ = SIZEOF (.data_run)
+                0x0000000020000100                __data_run_load_end__ = __data_run_end__
                 0x0000000000000001                . = ASSERT (((__data_run_start__ == __data_run_end__) || ((__data_run_end__ >= __RAM_segment_start__) && (__data_run_end__ <= __RAM_segment_end__))), error: .data_run is too large to fit in RAM memory segment)
-                0x0000000008008a54                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
+                0x0000000008008c88                __tdata_load_start__ = ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4)
 
-.tdata          0x000000002000010c        0x0 load address 0x0000000008008a54
-                0x000000002000010c                __tdata_start__ = .
+.tdata          0x0000000020000100        0x0 load address 0x0000000008008c88
+                0x0000000020000100                __tdata_start__ = .
  *(.tdata .tdata.*)
-                0x000000002000010c                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
+                0x0000000020000100                __tdata_end__ = (__tdata_start__ + SIZEOF (.tdata))
                 0x0000000000000000                __tdata_size__ = SIZEOF (.tdata)
-                0x0000000008008a54                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
-                0x0000000008008a54                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
-                0x0000000000008a54                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
+                0x0000000008008c88                __tdata_load_end__ = (__tdata_load_start__ + SIZEOF (.tdata))
+                0x0000000008008c88                __FLASH_segment_used_end__ = (ALIGN ((__data_load_start__ + SIZEOF (.data)), 0x4) + SIZEOF (.tdata))
+                0x0000000000008c88                __FLASH_segment_used_size__ = (__FLASH_segment_used_end__ - __FLASH_segment_start__)
                 0x0000000000000001                . = ASSERT (((__tdata_load_start__ == __tdata_load_end__) || ((__tdata_load_end__ >= __FLASH_segment_start__) && (__tdata_load_end__ <= __FLASH_segment_end__))), error: .tdata is too large to fit in FLASH memory segment)
 
-.tdata_run      0x000000002000010c        0x0
-                0x000000002000010c                __tdata_run_start__ = .
-                0x000000002000010c                . = MAX ((__tdata_run_start__ + SIZEOF (.tdata)), .)
-                0x000000002000010c                __tdata_run_end__ = (__tdata_run_start__ + SIZEOF (.tdata_run))
+.tdata_run      0x0000000020000100        0x0
+                0x0000000020000100                __tdata_run_start__ = .
+                0x0000000020000100                . = MAX ((__tdata_run_start__ + SIZEOF (.tdata)), .)
+                0x0000000020000100                __tdata_run_end__ = (__tdata_run_start__ + SIZEOF (.tdata_run))
                 0x0000000000000000                __tdata_run_size__ = SIZEOF (.tdata_run)
-                0x000000002000010c                __tdata_run_load_end__ = __tdata_run_end__
+                0x0000000020000100                __tdata_run_load_end__ = __tdata_run_end__
                 0x0000000000000001                . = ASSERT (((__tdata_run_start__ == __tdata_run_end__) || ((__tdata_run_end__ >= __RAM_segment_start__) && (__tdata_run_end__ <= __RAM_segment_end__))), error: .tdata_run is too large to fit in RAM memory segment)
-                0x000000002000010c                __bss_load_start__ = ALIGN (__tdata_run_end__, 0x4)
+                0x0000000020000100                __bss_load_start__ = ALIGN (__tdata_run_end__, 0x4)
 
-.bss            0x000000002000010c      0x97c
-                0x000000002000010c                __bss_start__ = .
+.bss            0x0000000020000100      0x990
+                0x0000000020000100                __bss_start__ = .
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss.hspi2     0x000000002000010c       0x58 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
-                0x000000002000010c                hspi2
- .bss.huart1    0x0000000020000164       0x40 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
-                0x0000000020000164                huart1
- .bss.huart2    0x00000000200001a4       0x40 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
-                0x00000000200001a4                huart2
+ .bss.hspi2     0x0000000020000100       0x58 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
+                0x0000000020000100                hspi2
+ .bss.huart1    0x0000000020000158       0x40 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+                0x0000000020000158                huart1
+ .bss.huart2    0x0000000020000198       0x40 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+                0x0000000020000198                huart2
  .bss.hdma_usart1_rx
-                0x00000000200001e4       0x44 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
-                0x00000000200001e4                hdma_usart1_rx
+                0x00000000200001d8       0x44 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+                0x00000000200001d8                hdma_usart1_rx
  .bss.hdma_usart1_tx
-                0x0000000020000228       0x44 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
-                0x0000000020000228                hdma_usart1_tx
+                0x000000002000021c       0x44 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+                0x000000002000021c                hdma_usart1_tx
  .bss.hdma_usart2_tx
-                0x000000002000026c       0x44 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
-                0x000000002000026c                hdma_usart2_tx
- .bss.hadc1     0x00000000200002b0       0x30 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
-                0x00000000200002b0                hadc1
+                0x0000000020000260       0x44 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+                0x0000000020000260                hdma_usart2_tx
+ .bss.hadc1     0x00000000200002a4       0x30 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
+                0x00000000200002a4                hadc1
  .bss.hdma_adc1
-                0x00000000200002e0       0x44 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
-                0x00000000200002e0                hdma_adc1
- .bss.htim1     0x0000000020000324       0x40 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x0000000020000324                htim1
- .bss.htim2     0x0000000020000364       0x40 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x0000000020000364                htim2
- .bss.htim3     0x00000000200003a4       0x40 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x00000000200003a4                htim3
- .bss.htim4     0x00000000200003e4       0x40 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
-                0x00000000200003e4                htim4
- .bss.uwTick    0x0000000020000424        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
-                0x0000000020000424                uwTick
- .bss.pFlash    0x0000000020000428       0x20 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
-                0x0000000020000428                pFlash
+                0x00000000200002d4       0x44 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
+                0x00000000200002d4                hdma_adc1
+ .bss.htim1     0x0000000020000318       0x40 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x0000000020000318                htim1
+ .bss.htim2     0x0000000020000358       0x40 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x0000000020000358                htim2
+ .bss.htim3     0x0000000020000398       0x40 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x0000000020000398                htim3
+ .bss.htim4     0x00000000200003d8       0x40 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+                0x00000000200003d8                htim4
+ .bss.uwTick    0x0000000020000418        0x4 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+                0x0000000020000418                uwTick
+ *fill*         0x000000002000041c        0x4 
+ .bss.pFlash    0x0000000020000420       0x20 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+                0x0000000020000420                pFlash
  .bss.device_status
-                0x0000000020000448       0x7c Output/CH_HomeRo CH_HomeRo/Obj/app.o
-                0x0000000020000448                device_status
+                0x0000000020000440       0x80 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x0000000020000440                device_status
  .bss.device_error
-                0x00000000200004c4        0x4 Output/CH_HomeRo CH_HomeRo/Obj/app.o
-                0x00000000200004c4                device_error
+                0x00000000200004c0        0x8 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x00000000200004c0                device_error
  .bss.bc95_recv
                 0x00000000200004c8      0x4b8 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
                 0x00000000200004c8                bc95_recv
@@ -3915,43 +3916,49 @@ Linker script and memory map
  .bss.libc.__user_format_extender
                 0x0000000020000a84        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
                 0x0000000020000a84                __user_format_extender
+ .bss.libdebugio.dbgCntrlWord_mempoll
+                0x0000000020000a88        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+                0x0000000020000a88                dbgCntrlWord_mempoll
+ .bss.libdebugio.dbgCommWord
+                0x0000000020000a8c        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
+                0x0000000020000a8c                dbgCommWord
  *(COMMON)
-                0x0000000020000a88                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
-                0x000000000000097c                __bss_size__ = SIZEOF (.bss)
-                0x0000000020000a88                __bss_load_end__ = __bss_end__
+                0x0000000020000a90                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
+                0x0000000000000990                __bss_size__ = SIZEOF (.bss)
+                0x0000000020000a90                __bss_load_end__ = __bss_end__
                 0x0000000000000001                . = ASSERT (((__bss_start__ == __bss_end__) || ((__bss_end__ >= __RAM_segment_start__) && (__bss_end__ <= __RAM_segment_end__))), error: .bss is too large to fit in RAM memory segment)
-                0x0000000020000a88                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
+                0x0000000020000a90                __tbss_load_start__ = ALIGN (__bss_end__, 0x4)
 
-.tbss           0x0000000020000a88        0xc
-                0x0000000020000a88                __tbss_start__ = .
+.tbss           0x0000000020000a90        0xc
+                0x0000000020000a90                __tbss_start__ = .
  *(.tbss .tbss.*)
  .tbss.__RAL_wctomb_mbstate
-                0x0000000020000a88        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000020000a90        0x8 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
  .tbss.errno_val
-                0x0000000020000a90        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
-                0x0000000020000a94                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
+                0x0000000020000a98        0x4 /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+                0x0000000020000a9c                __tbss_end__ = (__tbss_start__ + SIZEOF (.tbss))
                 0x000000000000000c                __tbss_size__ = SIZEOF (.tbss)
-                0x0000000020000a94                __tbss_load_end__ = __tbss_end__
+                0x0000000020000a9c                __tbss_load_end__ = __tbss_end__
                 0x0000000000000001                . = ASSERT (((__tbss_start__ == __tbss_end__) || ((__tbss_end__ >= __RAM_segment_start__) && (__tbss_end__ <= __RAM_segment_end__))), error: .tbss is too large to fit in RAM memory segment)
-                0x0000000020000a94                __non_init_load_start__ = ALIGN (__tbss_end__, 0x4)
+                0x0000000020000a9c                __non_init_load_start__ = ALIGN (__tbss_end__, 0x4)
 
-.non_init       0x0000000020000a94        0x0
-                0x0000000020000a94                __non_init_start__ = .
+.non_init       0x0000000020000a9c        0x0
+                0x0000000020000a9c                __non_init_start__ = .
  *(.non_init .non_init.*)
-                0x0000000020000a94                __non_init_end__ = (__non_init_start__ + SIZEOF (.non_init))
+                0x0000000020000a9c                __non_init_end__ = (__non_init_start__ + SIZEOF (.non_init))
                 0x0000000000000000                __non_init_size__ = SIZEOF (.non_init)
-                0x0000000020000a94                __non_init_load_end__ = __non_init_end__
+                0x0000000020000a9c                __non_init_load_end__ = __non_init_end__
                 0x0000000000000001                . = ASSERT (((__non_init_start__ == __non_init_end__) || ((__non_init_end__ >= __RAM_segment_start__) && (__non_init_end__ <= __RAM_segment_end__))), error: .non_init is too large to fit in RAM memory segment)
-                0x0000000020000a94                __heap_load_start__ = ALIGN (__non_init_end__, 0x4)
+                0x0000000020000a9c                __heap_load_start__ = ALIGN (__non_init_end__, 0x4)
 
-.heap           0x0000000020000a94      0x400
-                0x0000000020000a94                __heap_start__ = .
+.heap           0x0000000020000a9c      0x400
+                0x0000000020000a9c                __heap_start__ = .
  *(.heap .heap.*)
-                0x0000000020000e94                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
- *fill*         0x0000000020000a94      0x400 
-                0x0000000020000e94                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
+                0x0000000020000e9c                . = ALIGN (MAX ((__heap_start__ + __HEAPSIZE__), .), 0x4)
+ *fill*         0x0000000020000a9c      0x400 
+                0x0000000020000e9c                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
                 0x0000000000000400                __heap_size__ = SIZEOF (.heap)
-                0x0000000020000e94                __heap_load_end__ = __heap_end__
+                0x0000000020000e9c                __heap_load_end__ = __heap_end__
                 0x0000000000000001                . = ASSERT (((__heap_start__ == __heap_end__) || ((__heap_end__ >= __RAM_segment_start__) && (__heap_end__ <= __RAM_segment_end__))), error: .heap is too large to fit in RAM memory segment)
                 0x0000000020004c00                __stack_load_start__ = (__RAM_segment_end__ - 0x400)
 
@@ -4091,15 +4098,19 @@ OUTPUT(Output/CH_HomeRo/Exe/CH_HomeRo.elf elf32-littlearm)
  .ARM.attributes
                 0x00000000000005d9       0x1b /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc_asm.o)
  .ARM.attributes
-                0x00000000000005f4       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
+                0x00000000000005f4       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
  .ARM.attributes
-                0x0000000000000621       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
+                0x0000000000000621       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
  .ARM.attributes
-                0x000000000000064e       0x1b /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+                0x000000000000064e       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
  .ARM.attributes
-                0x0000000000000669       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
+                0x000000000000067b       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
  .ARM.attributes
-                0x0000000000000696       0x1b /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
+                0x00000000000006a8       0x1b /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm_asm.o)
+ .ARM.attributes
+                0x00000000000006c3       0x2d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
+ .ARM.attributes
+                0x00000000000006f0       0x1b /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2_asm.o)
 
 .comment        0x0000000000000000       0x4c
  .comment       0x0000000000000000       0x4c Output/CH_HomeRo CH_HomeRo/Obj/main.o
@@ -4130,104 +4141,106 @@ OUTPUT(Output/CH_HomeRo/Exe/CH_HomeRo.elf elf32-littlearm)
  .comment       0x000000000000004c       0x4d Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
  .comment       0x000000000000004c       0x4d Output/CH_HomeRo CH_HomeRo/Obj/tools.o
  .comment       0x000000000000004c       0x4d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libc_v7m_t_le_eabi.a(libc2.o)
+ .comment       0x000000000000004c       0x4d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_v7m_t_le_eabi.a(libdebugio.o)
  .comment       0x000000000000004c       0x4d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfprintf_v7m_t_le_eabi.o
  .comment       0x000000000000004c       0x4d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libvfscanf_v7m_t_le_eabi.o
+ .comment       0x000000000000004c       0x4d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libdebugio_mempoll_v7m_t_le_eabi.a(mempoll_debug_operations.o)
  .comment       0x000000000000004c       0x4d /Applications/SEGGER Embedded Studio for ARM 3.34/lib/libm_v7m_t_le_eabi.a(libm2.o)
 
-.debug_line     0x0000000000000000     0x7593
+.debug_line     0x0000000000000000     0x75c0
  .debug_line    0x0000000000000000      0x2a7 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .debug_line    0x00000000000002a7       0xd8 Output/CH_HomeRo CH_HomeRo/Obj/STM32F103xx_Vectors.o
- .debug_line    0x000000000000037f      0x35b Output/CH_HomeRo CH_HomeRo/Obj/main.o
- .debug_line    0x00000000000006da      0x243 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
- .debug_line    0x000000000000091d      0x18d Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
- .debug_line    0x0000000000000aaa      0x29e Output/CH_HomeRo CH_HomeRo/Obj/usart.o
- .debug_line    0x0000000000000d48      0x265 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
- .debug_line    0x0000000000000fad      0x30c Output/CH_HomeRo CH_HomeRo/Obj/tim.o
- .debug_line    0x00000000000012b9      0x17e Output/CH_HomeRo CH_HomeRo/Obj/dma.o
- .debug_line    0x0000000000001437      0x1db Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
- .debug_line    0x0000000000001612      0x3a6 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
- .debug_line    0x00000000000019b8      0x1d0 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
- .debug_line    0x0000000000001b88       0xa4 Output/CH_HomeRo CH_HomeRo/Obj/STM32F1xx_Startup.o
- .debug_line    0x0000000000001c2c      0x3e5 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
- .debug_line    0x0000000000002011      0xad5 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
- .debug_line    0x0000000000002ae6      0x347 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
- .debug_line    0x0000000000002e2d      0x3f0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
- .debug_line    0x000000000000321d      0x734 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
- .debug_line    0x0000000000003951      0x4af Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
- .debug_line    0x0000000000003e00      0x449 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
- .debug_line    0x0000000000004249     0x1191 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
- .debug_line    0x00000000000053da      0x79a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
- .debug_line    0x0000000000005b74      0x634 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
- .debug_line    0x00000000000061a8      0x2b0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
- .debug_line    0x0000000000006458      0x44a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
- .debug_line    0x00000000000068a2      0x220 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
- .debug_line    0x0000000000006ac2      0x33b Output/CH_HomeRo CH_HomeRo/Obj/app.o
- .debug_line    0x0000000000006dfd      0x3f2 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
- .debug_line    0x00000000000071ef      0x3a4 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+ .debug_line    0x000000000000037f      0x36b Output/CH_HomeRo CH_HomeRo/Obj/main.o
+ .debug_line    0x00000000000006ea      0x243 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
+ .debug_line    0x000000000000092d      0x18d Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
+ .debug_line    0x0000000000000aba      0x29e Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+ .debug_line    0x0000000000000d58      0x265 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
+ .debug_line    0x0000000000000fbd      0x30c Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+ .debug_line    0x00000000000012c9      0x17e Output/CH_HomeRo CH_HomeRo/Obj/dma.o
+ .debug_line    0x0000000000001447      0x1db Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
+ .debug_line    0x0000000000001622      0x3a6 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+ .debug_line    0x00000000000019c8      0x1d0 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
+ .debug_line    0x0000000000001b98       0xa4 Output/CH_HomeRo CH_HomeRo/Obj/STM32F1xx_Startup.o
+ .debug_line    0x0000000000001c3c      0x3e5 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
+ .debug_line    0x0000000000002021      0xad5 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+ .debug_line    0x0000000000002af6      0x347 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+ .debug_line    0x0000000000002e3d      0x3f0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+ .debug_line    0x000000000000322d      0x734 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
+ .debug_line    0x0000000000003961      0x4af Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+ .debug_line    0x0000000000003e10      0x449 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+ .debug_line    0x0000000000004259     0x1191 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+ .debug_line    0x00000000000053ea      0x79a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
+ .debug_line    0x0000000000005b84      0x634 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+ .debug_line    0x00000000000061b8      0x2b0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
+ .debug_line    0x0000000000006468      0x44a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
+ .debug_line    0x00000000000068b2      0x220 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
+ .debug_line    0x0000000000006ad2      0x356 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+ .debug_line    0x0000000000006e28      0x3f4 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+ .debug_line    0x000000000000721c      0x3a4 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
 
-.debug_info     0x0000000000000000    0x18e1f
+.debug_info     0x0000000000000000    0x18fbf
  .debug_info    0x0000000000000000       0x94 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .debug_info    0x0000000000000094       0xb7 Output/CH_HomeRo CH_HomeRo/Obj/STM32F103xx_Vectors.o
- .debug_info    0x000000000000014b     0x1819 Output/CH_HomeRo CH_HomeRo/Obj/main.o
- .debug_info    0x0000000000001964      0xca7 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
- .debug_info    0x000000000000260b      0x8a8 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
- .debug_info    0x0000000000002eb3      0xe06 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
- .debug_info    0x0000000000003cb9      0xc95 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
- .debug_info    0x000000000000494e     0x10c4 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
- .debug_info    0x0000000000005a12      0x83c Output/CH_HomeRo CH_HomeRo/Obj/dma.o
- .debug_info    0x000000000000624e      0x832 Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
- .debug_info    0x0000000000006a80     0x1294 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
- .debug_info    0x0000000000007d14      0x906 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
- .debug_info    0x000000000000861a       0xb5 Output/CH_HomeRo CH_HomeRo/Obj/STM32F1xx_Startup.o
- .debug_info    0x00000000000086cf      0xb5d Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
- .debug_info    0x000000000000922c     0x1690 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
- .debug_info    0x000000000000a8bc      0xb37 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
- .debug_info    0x000000000000b3f3      0xa3b Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
- .debug_info    0x000000000000be2e     0x111d Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
- .debug_info    0x000000000000cf4b      0xcc3 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
- .debug_info    0x000000000000dc0e     0x1005 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
- .debug_info    0x000000000000ec13     0x26c5 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
- .debug_info    0x00000000000112d8     0x1474 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
- .debug_info    0x000000000001274c      0xc70 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
- .debug_info    0x00000000000133bc      0x906 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
- .debug_info    0x0000000000013cc2      0xcd3 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
- .debug_info    0x0000000000014995      0xaf7 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
- .debug_info    0x000000000001548c     0x12ca Output/CH_HomeRo CH_HomeRo/Obj/app.o
- .debug_info    0x0000000000016756     0x14ca Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
- .debug_info    0x0000000000017c20     0x11ff Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+ .debug_info    0x000000000000014b     0x1865 Output/CH_HomeRo CH_HomeRo/Obj/main.o
+ .debug_info    0x00000000000019b0      0xca7 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
+ .debug_info    0x0000000000002657      0x8a8 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
+ .debug_info    0x0000000000002eff      0xe06 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+ .debug_info    0x0000000000003d05      0xc95 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
+ .debug_info    0x000000000000499a     0x10c4 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+ .debug_info    0x0000000000005a5e      0x83c Output/CH_HomeRo CH_HomeRo/Obj/dma.o
+ .debug_info    0x000000000000629a      0x832 Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
+ .debug_info    0x0000000000006acc     0x12e0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+ .debug_info    0x0000000000007dac      0x906 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
+ .debug_info    0x00000000000086b2       0xb5 Output/CH_HomeRo CH_HomeRo/Obj/STM32F1xx_Startup.o
+ .debug_info    0x0000000000008767      0xb5d Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
+ .debug_info    0x00000000000092c4     0x1690 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+ .debug_info    0x000000000000a954      0xb37 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+ .debug_info    0x000000000000b48b      0xa3b Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+ .debug_info    0x000000000000bec6     0x111d Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
+ .debug_info    0x000000000000cfe3      0xcc3 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+ .debug_info    0x000000000000dca6     0x1005 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+ .debug_info    0x000000000000ecab     0x26c5 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+ .debug_info    0x0000000000011370     0x1474 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
+ .debug_info    0x00000000000127e4      0xc70 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+ .debug_info    0x0000000000013454      0x906 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
+ .debug_info    0x0000000000013d5a      0xcd3 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
+ .debug_info    0x0000000000014a2d      0xaf7 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
+ .debug_info    0x0000000000015524     0x133a Output/CH_HomeRo CH_HomeRo/Obj/app.o
+ .debug_info    0x000000000001685e     0x1516 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+ .debug_info    0x0000000000017d74     0x124b Output/CH_HomeRo CH_HomeRo/Obj/tools.o
 
-.debug_abbrev   0x0000000000000000     0x358b
+.debug_abbrev   0x0000000000000000     0x35fa
  .debug_abbrev  0x0000000000000000       0x12 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .debug_abbrev  0x0000000000000012       0x14 Output/CH_HomeRo CH_HomeRo/Obj/STM32F103xx_Vectors.o
- .debug_abbrev  0x0000000000000026      0x20c Output/CH_HomeRo CH_HomeRo/Obj/main.o
- .debug_abbrev  0x0000000000000232      0x1b4 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
- .debug_abbrev  0x00000000000003e6      0x168 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
- .debug_abbrev  0x000000000000054e      0x1d9 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
- .debug_abbrev  0x0000000000000727      0x1c5 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
- .debug_abbrev  0x00000000000008ec      0x200 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
- .debug_abbrev  0x0000000000000aec      0x168 Output/CH_HomeRo CH_HomeRo/Obj/dma.o
- .debug_abbrev  0x0000000000000c54      0x179 Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
- .debug_abbrev  0x0000000000000dcd      0x1df Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
- .debug_abbrev  0x0000000000000fac      0x195 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
- .debug_abbrev  0x0000000000001141       0x14 Output/CH_HomeRo CH_HomeRo/Obj/STM32F1xx_Startup.o
- .debug_abbrev  0x0000000000001155      0x205 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
- .debug_abbrev  0x000000000000135a      0x268 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
- .debug_abbrev  0x00000000000015c2      0x239 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
- .debug_abbrev  0x00000000000017fb      0x239 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
- .debug_abbrev  0x0000000000001a34      0x1fb Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
- .debug_abbrev  0x0000000000001c2f      0x28c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
- .debug_abbrev  0x0000000000001ebb      0x312 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
- .debug_abbrev  0x00000000000021cd      0x265 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
- .debug_abbrev  0x0000000000002432      0x242 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
- .debug_abbrev  0x0000000000002674      0x224 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
- .debug_abbrev  0x0000000000002898      0x1cd Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
- .debug_abbrev  0x0000000000002a65      0x257 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
- .debug_abbrev  0x0000000000002cbc      0x179 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
- .debug_abbrev  0x0000000000002e35      0x22f Output/CH_HomeRo CH_HomeRo/Obj/app.o
- .debug_abbrev  0x0000000000003064      0x2e0 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
- .debug_abbrev  0x0000000000003344      0x247 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+ .debug_abbrev  0x0000000000000026      0x21d Output/CH_HomeRo CH_HomeRo/Obj/main.o
+ .debug_abbrev  0x0000000000000243      0x1b4 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
+ .debug_abbrev  0x00000000000003f7      0x168 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
+ .debug_abbrev  0x000000000000055f      0x1d9 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+ .debug_abbrev  0x0000000000000738      0x1c5 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
+ .debug_abbrev  0x00000000000008fd      0x200 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+ .debug_abbrev  0x0000000000000afd      0x168 Output/CH_HomeRo CH_HomeRo/Obj/dma.o
+ .debug_abbrev  0x0000000000000c65      0x179 Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
+ .debug_abbrev  0x0000000000000dde      0x1f0 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+ .debug_abbrev  0x0000000000000fce      0x195 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
+ .debug_abbrev  0x0000000000001163       0x14 Output/CH_HomeRo CH_HomeRo/Obj/STM32F1xx_Startup.o
+ .debug_abbrev  0x0000000000001177      0x205 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
+ .debug_abbrev  0x000000000000137c      0x268 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+ .debug_abbrev  0x00000000000015e4      0x239 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+ .debug_abbrev  0x000000000000181d      0x239 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+ .debug_abbrev  0x0000000000001a56      0x1fb Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
+ .debug_abbrev  0x0000000000001c51      0x28c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+ .debug_abbrev  0x0000000000001edd      0x312 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+ .debug_abbrev  0x00000000000021ef      0x265 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+ .debug_abbrev  0x0000000000002454      0x242 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
+ .debug_abbrev  0x0000000000002696      0x224 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+ .debug_abbrev  0x00000000000028ba      0x1cd Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
+ .debug_abbrev  0x0000000000002a87      0x257 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
+ .debug_abbrev  0x0000000000002cde      0x179 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
+ .debug_abbrev  0x0000000000002e57      0x25a Output/CH_HomeRo CH_HomeRo/Obj/app.o
+ .debug_abbrev  0x00000000000030b1      0x2f1 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+ .debug_abbrev  0x00000000000033a2      0x258 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
 
-.debug_aranges  0x0000000000000000     0x1068
+.debug_aranges  0x0000000000000000     0x1070
  .debug_aranges
                 0x0000000000000000       0xe0 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .debug_aranges
@@ -4281,13 +4294,13 @@ OUTPUT(Output/CH_HomeRo/Exe/CH_HomeRo.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000f38       0x20 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
  .debug_aranges
-                0x0000000000000f58       0x40 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x0000000000000f58       0x48 Output/CH_HomeRo CH_HomeRo/Obj/app.o
  .debug_aranges
-                0x0000000000000f98       0x88 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000000000fa0       0x88 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
  .debug_aranges
-                0x0000000000001020       0x48 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+                0x0000000000001028       0x48 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
 
-.debug_ranges   0x0000000000000000      0xe80
+.debug_ranges   0x0000000000000000      0xe88
  .debug_ranges  0x0000000000000000       0xd8 Output/CH_HomeRo CH_HomeRo/Obj/thumb_crt0.o
  .debug_ranges  0x00000000000000d8       0x20 Output/CH_HomeRo CH_HomeRo/Obj/main.o
  .debug_ranges  0x00000000000000f8       0x20 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
@@ -4312,11 +4325,11 @@ OUTPUT(Output/CH_HomeRo/Exe/CH_HomeRo.elf elf32-littlearm)
  .debug_ranges  0x0000000000000ce8       0x20 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
  .debug_ranges  0x0000000000000d08       0x88 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
  .debug_ranges  0x0000000000000d90       0x10 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
- .debug_ranges  0x0000000000000da0       0x30 Output/CH_HomeRo CH_HomeRo/Obj/app.o
- .debug_ranges  0x0000000000000dd0       0x78 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
- .debug_ranges  0x0000000000000e48       0x38 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+ .debug_ranges  0x0000000000000da0       0x38 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+ .debug_ranges  0x0000000000000dd8       0x78 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+ .debug_ranges  0x0000000000000e50       0x38 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
 
-.debug_frame    0x0000000000000000     0x38e4
+.debug_frame    0x0000000000000000     0x3904
  .debug_frame   0x0000000000000000       0x6c Output/CH_HomeRo CH_HomeRo/Obj/main.o
  .debug_frame   0x000000000000006c       0x7c Output/CH_HomeRo CH_HomeRo/Obj/spi.o
  .debug_frame   0x00000000000000e8       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
@@ -4340,12 +4353,12 @@ OUTPUT(Output/CH_HomeRo/Exe/CH_HomeRo.elf elf32-littlearm)
  .debug_frame   0x0000000000003214       0x84 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
  .debug_frame   0x0000000000003298      0x240 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
  .debug_frame   0x00000000000034d8       0x38 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
- .debug_frame   0x0000000000003510       0xb8 Output/CH_HomeRo CH_HomeRo/Obj/app.o
- .debug_frame   0x00000000000035c8      0x21c Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
- .debug_frame   0x00000000000037e4      0x100 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+ .debug_frame   0x0000000000003510       0xd8 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+ .debug_frame   0x00000000000035e8      0x21c Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+ .debug_frame   0x0000000000003804      0x100 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
 
 .debug_pubnames
-                0x0000000000000000     0x52b0
+                0x0000000000000000     0x5366
  .debug_pubnames
                 0x0000000000000000      0x437 Output/CH_HomeRo CH_HomeRo/Obj/main.o
  .debug_pubnames
@@ -4393,11 +4406,11 @@ OUTPUT(Output/CH_HomeRo/Exe/CH_HomeRo.elf elf32-littlearm)
  .debug_pubnames
                 0x0000000000004ccb      0x109 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
  .debug_pubnames
-                0x0000000000004dd4       0xc3 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                0x0000000000004dd4      0x179 Output/CH_HomeRo CH_HomeRo/Obj/app.o
  .debug_pubnames
-                0x0000000000004e97      0x377 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                0x0000000000004f4d      0x377 Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
  .debug_pubnames
-                0x000000000000520e       0xa2 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+                0x00000000000052c4       0xa2 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
 
 .debug_pubtypes
                 0x0000000000000000     0x46b6
@@ -4454,56 +4467,56 @@ OUTPUT(Output/CH_HomeRo/Exe/CH_HomeRo.elf elf32-littlearm)
  .debug_pubtypes
                 0x0000000000004362      0x354 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
 
-.debug_str      0x0000000000000000     0x4b04
- .debug_str     0x0000000000000000     0x148e Output/CH_HomeRo CH_HomeRo/Obj/main.o
-                                       0x162b (size before relaxing)
- .debug_str     0x000000000000148e       0xd2 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
+.debug_str      0x0000000000000000     0x4b57
+ .debug_str     0x0000000000000000     0x14e1 Output/CH_HomeRo CH_HomeRo/Obj/main.o
+                                       0x167e (size before relaxing)
+ .debug_str     0x00000000000014e1       0xd2 Output/CH_HomeRo CH_HomeRo/Obj/spi.o
                                         0xbb1 (size before relaxing)
- .debug_str     0x0000000000001560       0x74 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
+ .debug_str     0x00000000000015b3       0x74 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_msp.o
                                         0xa84 (size before relaxing)
- .debug_str     0x00000000000015d4       0xb2 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
+ .debug_str     0x0000000000001627       0xb2 Output/CH_HomeRo CH_HomeRo/Obj/usart.o
                                         0xeb4 (size before relaxing)
- .debug_str     0x0000000000001686       0xa0 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
+ .debug_str     0x00000000000016d9       0xa0 Output/CH_HomeRo CH_HomeRo/Obj/adc.o
                                         0xb3b (size before relaxing)
- .debug_str     0x0000000000001726      0x196 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
+ .debug_str     0x0000000000001779      0x196 Output/CH_HomeRo CH_HomeRo/Obj/tim.o
                                        0x103c (size before relaxing)
- .debug_str     0x00000000000018bc       0x38 Output/CH_HomeRo CH_HomeRo/Obj/dma.o
+ .debug_str     0x000000000000190f       0x38 Output/CH_HomeRo CH_HomeRo/Obj/dma.o
                                         0xa48 (size before relaxing)
- .debug_str     0x00000000000018f4       0x56 Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
+ .debug_str     0x0000000000001947       0x56 Output/CH_HomeRo CH_HomeRo/Obj/gpio.o
                                         0x7e2 (size before relaxing)
- .debug_str     0x000000000000194a      0x16b Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
-                                       0x1112 (size before relaxing)
- .debug_str     0x0000000000001ab5       0xc0 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
+ .debug_str     0x000000000000199d      0x16b Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_it.o
+                                       0x1165 (size before relaxing)
+ .debug_str     0x0000000000001b08       0xc0 Output/CH_HomeRo CH_HomeRo/Obj/system_stm32f1xx.o
                                         0x804 (size before relaxing)
- .debug_str     0x0000000000001b75      0x182 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
+ .debug_str     0x0000000000001bc8      0x182 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_gpio.o
                                         0x990 (size before relaxing)
- .debug_str     0x0000000000001cf7      0x557 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
+ .debug_str     0x0000000000001d4a      0x557 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_uart.o
                                        0x1072 (size before relaxing)
- .debug_str     0x000000000000224e      0x223 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
+ .debug_str     0x00000000000022a1      0x223 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal.o
                                         0xc85 (size before relaxing)
- .debug_str     0x0000000000002471      0x29d Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
+ .debug_str     0x00000000000024c4      0x29d Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash.o
                                         0xa6b (size before relaxing)
- .debug_str     0x000000000000270e      0x317 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
+ .debug_str     0x0000000000002761      0x317 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_adc.o
                                         0xdb9 (size before relaxing)
- .debug_str     0x0000000000002a25      0x21a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
+ .debug_str     0x0000000000002a78      0x21a Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc.o
                                         0xb40 (size before relaxing)
- .debug_str     0x0000000000002c3f      0x2e1 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
+ .debug_str     0x0000000000002c92      0x2e1 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_cortex.o
                                         0xe2e (size before relaxing)
- .debug_str     0x0000000000002f20      0xc5e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
+ .debug_str     0x0000000000002f73      0xc5e Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim.o
                                        0x186a (size before relaxing)
- .debug_str     0x0000000000003b7e      0x4fc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
+ .debug_str     0x0000000000003bd1      0x4fc Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_tim_ex.o
                                        0x1107 (size before relaxing)
- .debug_str     0x000000000000407a      0x259 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
+ .debug_str     0x00000000000040cd      0x259 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_dma.o
                                         0xb86 (size before relaxing)
- .debug_str     0x00000000000042d3       0xd8 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
+ .debug_str     0x0000000000004326       0xd8 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_rcc_ex.o
                                         0x935 (size before relaxing)
- .debug_str     0x00000000000043ab      0x2f2 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
+ .debug_str     0x00000000000043fe      0x2f2 Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_flash_ex.o
                                         0xb97 (size before relaxing)
- .debug_str     0x000000000000469d       0x6c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
+ .debug_str     0x00000000000046f0       0x6c Output/CH_HomeRo CH_HomeRo/Obj/stm32f1xx_hal_spi_ex.o
                                         0xb3b (size before relaxing)
- .debug_str     0x0000000000004709       0x80 Output/CH_HomeRo CH_HomeRo/Obj/app.o
-                                       0x103f (size before relaxing)
- .debug_str     0x0000000000004789      0x2bb Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
-                                       0x1092 (size before relaxing)
- .debug_str     0x0000000000004a44       0xc0 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
-                                        0xe9c (size before relaxing)
+ .debug_str     0x000000000000475c       0x80 Output/CH_HomeRo CH_HomeRo/Obj/app.o
+                                       0x10ad (size before relaxing)
+ .debug_str     0x00000000000047dc      0x2bb Output/CH_HomeRo CH_HomeRo/Obj/bc95.o
+                                       0x10e5 (size before relaxing)
+ .debug_str     0x0000000000004a97       0xc0 Output/CH_HomeRo CH_HomeRo/Obj/tools.o
+                                        0xeef (size before relaxing)

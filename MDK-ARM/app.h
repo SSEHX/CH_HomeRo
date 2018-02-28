@@ -67,18 +67,28 @@ typedef struct{
     uint32_t     create_water_time_m;    //制水时间分钟
     uint32_t     create_water_rinse;     //制水多长时间冲洗 分钟
     uint32_t     create_water_rinse_count;
+    uint32_t     flow_count;
 }device_statusTypeDef;
 
 extern device_statusTypeDef device_status; 
 
 typedef struct{
     uint8_t bc95_init_error;
-    uint8_t leakage;
-    uint8_t raw_no_water;
+    uint8_t leakage;                    // leakage flag
+    uint8_t leakage_count;              
+    uint8_t leakage_lock;
+    uint8_t raw_no_water;               // no water flag
+    uint8_t raw_no_water_lock;          // 0: have water 
+                                        // 1: no water and sended con`t resend 
+                                        // 2: have water and send have water
+    uint8_t raw_no_water_count;         // no water timer use
     uint8_t create_water_too_long;
 }device_errorTypeDef;
 
 extern device_errorTypeDef device_error;
+
+
+extern struct use_lcd lcd;
 
 void init_flash();
 void init_device_from_flash();

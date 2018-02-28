@@ -94,6 +94,11 @@
         <file file_name="tds/tds.c" />
         <file file_name="tds/tds.h" />
       </folder>
+      <folder Name="lcd">
+        <file file_name="lcd/lcd.c" />
+        <file file_name="lcd/lcd.h" />
+        <configuration Name="CH_HomeRo" build_exclude_from_build="Yes" />
+      </folder>
     </folder>
   </project>
   <configuration Name="Internal" hidden="Yes" />

@@ -1,6 +1,7 @@
 #include "app.h"
 #include "tim.h"
 
+
 device_statusTypeDef device_status = {0};
 device_errorTypeDef device_error = {0};
 
@@ -99,16 +100,28 @@ uint8_t registe_device(){
 
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-    
-    if (htim->Instance == htim2.Instance){
-        _system_led;
-        if(get_low_switch()){
+
+    if (htim->Instance == htim1.Instance){                  // no water timer
+        device_error.raw_no_water_count++;                  // 5 second add 1
+        if(device_error.raw_no_water_count >= 2){           // 5 minute set no water error
             device_error.raw_no_water = 1;
+        }
+    }
+    
+    if (htim->Instance == htim2.Instance){                  // main control timer
+        _system_led;
+        if(get_low_switch()){                               // get raw have no water
+            
+            
+            
             if(!device_status.rinse_lock){
                 stop_rinse;
             }
         }else{
-            device_error.raw_no_water = 0;
+            HAL_TIM_Base_Stop_IT(&htim1);
+            device_error.raw_no_water_count = 0;            // have water
+            device_error.raw_no_water_lock  = 2;            // resend command have water
+            
             if(!get_high_switch()){
                 start_create_water;
             }else{
@@ -126,8 +139,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
     }
     
 
-    // create water timer
-    if(htim->Instance == htim4.Instance){
+    
+    if(htim->Instance == htim4.Instance){                   // create water timer
         device_status.create_water_time_s++;
 
         if(device_status.create_water_time_s == 60){        // 60 second is 1 minute and add the create_water_rinse_count 
@@ -137,9 +150,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
             if(device_status.create_water_rinse_count >= device_status.create_water_rinse){
                 device_status.create_water_rinse_count = 0;
                 device_status.rinse = 1;
+                flash_device_status();
             }
         }
-        
         
         if(device_status.rinse_lock == 1){                  /*!< rinse lock don`t stop the rinse */
             device_status.rinse_time_count++;               /*!< once run this funtion is 1 second and add self to count number */
@@ -147,12 +160,18 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
                 device_status.rinse_lock = 0;               /*!< can close create water         */
                 shut_rinse;                                 /*!< stop rinse                     */
                 device_status.rinse_time_count = 0;         
+                
             }
         }
     }
 
-//    if(htim->Instance == htim3.Instance){
-//        
-//    }
+    if(htim->Instance == htim3.Instance){
+        
+    }
 }
 
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
+    if(HAL_TIM_ACTIVE_CHANNEL_4 == htim->Channel){
+        device_status.flow_count++;
+    }
+}

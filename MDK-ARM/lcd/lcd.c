@@ -15,32 +15,37 @@ uchar (lcd_flash)[16][8] = {"2097152",
 };
 
 
-//0±Ì æ≥…π¶£¨1±Ì æ ß∞‹
+//0 æ…π1 æ ß
 uchar lcd_cmd(char *cmd, char *reply,uint const waittime )
 {
 	
 	
-	LCD_CLEAN_RX();                 //«Âø’¡ÀΩ” ’ª∫≥Â«¯ ˝æ›
 
-	LCD_TX(cmd);                    //∑¢ÀÕ√¸¡Ó
+	
 
-	LCD_DEBUG("Send cmd:%s",cmd);
+	//LCD_CLEAN_RX();                 //ÀΩ’ª
 
-	if(reply == 0)                      //≤ª–Ë“™Ω” ’ ˝æ›
+	LCD_TX(cmd);                    //
+
+	//LCD_DEBUG("Send cmd:%s",cmd);
+
+	if(reply == 0)                      //“™
 	{
 		return LCD_TRUE;
 	}
 	
-	LCD_DELAY(waittime);                 //—” ±
+	LCD_DELAY(waittime);                 // ±
 	
 	
-	return lcd_cmd_check(reply);    //∂‘Ω” ’ ˝æ›Ω¯––¥¶¿Ì
+	return lcd_cmd_check(reply);    //‘Ω›Ω–¥
 }
 
 
-//0±Ì æ≥…π¶£¨1±Ì æ ß∞‹
+//0 æ…π1 æ ß
 uchar lcd_cmd_check(char *reply)
 {
+
+	return 0;
 	uchar len;
 	uchar n;
 	uchar off;
@@ -48,10 +53,9 @@ uchar lcd_cmd_check(char *reply)
 	
 
 
-	redata = LCD_RX(len);   //Ω” ’ ˝æ›
+	// redata = LCD_RX(len);   //
 	
-	*(redata+len) = '\0';
-
+	// *(redata+len) = '\0';
 
 	
 	
@@ -59,29 +63,29 @@ uchar lcd_cmd_check(char *reply)
 	off = 0;
 	while((n + off)<len)
 	{
-		if(reply[n] == 0)                 // ˝æ›Œ™ø’ªÚ’ﬂ±»ΩœÕÍ±œ
+		if(reply[n] == 0)                 //Œ™’ªﬂ±»Ω
 		{
 			return LCD_TRUE;
 		}
 		
 		if(redata[ n + off]== reply[n])
 		{
-			n++;                //“∆∂ØµΩœ¬“ª∏ˆΩ” ’ ˝æ›
+			n++;                //∆∂“ª
 		}
 		else
 		{
-			off++;              //Ω¯––œ¬“ª¬÷∆•≈‰
-			n=0;                //÷ÿ¿¥
+			off++;              //“ª∆•
+			n=0;                //
 		}
 		//n++;
 	}
 
-	if(reply[n]==0)   //∏’∫√∆•≈‰ÕÍ±œ
+	if(reply[n]==0)   //’∫∆•
 	{
 		return LCD_TRUE;
 	}
 	
-	return LCD_FALSE;       //Ã¯≥ˆ—≠ª∑±Ì æ±»ΩœÕÍ±œ∫Û∂º√ª”–œ‡Õ¨µƒ ˝æ›£¨“Ú¥ÀÃ¯≥ˆ
+	return LCD_FALSE;       //—≠ æ»Ωœ∫√ªÕ¨›£
 }
 uchar lcd_check_busy(void)
 {
@@ -226,11 +230,11 @@ uchar (lcd_dc)(uchar x,uchar y,uchar *str,uchar c,lcd_res_e V,uchar s)
 
 
 /************************************************************************/
-/* style :	0 ¥ÀBTN≤ª¥¯øÚ£¨º¥Œ™¥øŒƒ±æ£¨µ»Õ¨”⁄DC∫ÕDCV÷∏¡Ó
-1 ¥ÀBTN¥¯œ¬—πøÚ£¨ƒ£ƒ‚∞¥≈•∞¥œ¬µƒ–ßπ˚
-2 ¥ÀBTN¥¯Ãß∆øÚ£¨ƒ£ƒ‚∞¥≈•Ãß∆µƒ–ßπ˚
-4 ¥ÀBTN¥¯frame_color÷∏∂®µƒ—’…´øÚ
-8 ¥ÀBTN√ª”–µ◊…´
+/* style :	0 BTNÚ£¨ºŒ™ƒ±Õ¨DCDCV÷∏
+1 BTN—πƒ£‚∞¥≈•¬µ–ß
+2 BTNÃßƒ£‚∞¥≈•Ãß–ß
+4 BTNframe_color÷∏…´
+8 BTN√ª–µ…´
 */
 /************************************************************************/
 
@@ -380,7 +384,6 @@ uchar (lcd_box_31_f)(uchar x,uchar y,uchar c)
 uchar lcd_flash_point(uchar x,uchar y,uchar old_c,uchar new_c)
 {
 	lcd_ps(x,y,new_c);
-	_delay_ms(200);
 	lcd_ps(x,y,old_c);
 }
 
